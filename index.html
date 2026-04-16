@@ -1702,17 +1702,25 @@ bookInput.addEventListener('change', function() {
 bookFrame.addEventListener('click', function(e) {
   if (!bookFrame.classList.contains('has-image')) bookInput.click();
 });
+   <script>
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  const btn = this.querySelector('.form-submit');
-  btn.textContent = 'Enviando…';
-  btn.disabled = true;
-  setTimeout(() => {
-    document.getElementById('formWrap').style.display = 'none';
-    document.getElementById('formSuccess').classList.add('show');
-  }, 1100);
+
+  const form = e.target;
+  const data = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(() => {
+    window.location.href = "https://pagina-web-lota-flame.vercel.app/gracias.html";
+  });
 });
-</script>
+</script>  
+
 
 <!-- ── WHATSAPP BUTTON ── -->
 <a class="wa-btn" href="https://wa.me/19543039559?text=Hola%2C%20sent%C3%AD%20conexi%C3%B3n%20con%20tu%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20tus%20sesiones" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
