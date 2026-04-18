@@ -1391,7 +1391,7 @@ footer{
 
     <div class="form-card reveal">
       <div id="formWrap">
-        <form id="contactForm" action="https://formspree.io/f/xyknrepy" method="POST"> onsubmit="handleSubmit(event)">
+      
 <input type="hidden" name="_next" value="gracias.html">
           <div class="form-g">
             <div class="fg">
@@ -1702,8 +1702,8 @@ bookInput.addEventListener('change', function() {
 bookFrame.addEventListener('click', function(e) {
   if (!bookFrame.classList.contains('has-image')) bookInput.click();
 });
-   <script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+<script>
+function handleSubmit(e) {
   e.preventDefault();
 
   const form = e.target;
@@ -1717,9 +1717,11 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     }
   }).then(() => {
     window.location.href = "https://pagina-web-lota-flame.vercel.app/gracias.html";
+  }).catch(() => {
+    alert("Error al enviar el formulario");
   });
-});
-</script>  
+}
+   </script>
 
 
 <!-- ── WHATSAPP BUTTON ── -->
