@@ -1628,7 +1628,7 @@ const heroBgImg   = document.getElementById('heroBgImg');
 const heroBgWrap  = document.getElementById('heroBgWrap');
 const heroSection = document.getElementById('hero');
 
-heroBgWrap.addEventListener('click', (e) => { heroBgInput.click(); });
+if (heroBgWrap) heroBgWrap.addEventListener('click', (e) => { heroBgInput.click(); });
 
 heroBgInput.addEventListener('change', function() {
   const file = this.files[0];
@@ -1652,9 +1652,9 @@ const heroFrame = document.getElementById('heroFrame');
 const heroPlaceholder = document.getElementById('heroPlaceholder');
 const heroUploadLabel = document.getElementById('heroUploadLabel');
 
-heroFrame.addEventListener('click', () => heroInput.click());
+if (heroFrame) heroFrame.addEventListener('click', () => heroInput.click());
 
-heroInput.addEventListener('change', function() {
+if (heroInput) heroInput.addEventListener('change', function() {
   const file = this.files[0];
   if (!file) return;
   const reader = new FileReader();
