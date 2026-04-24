@@ -302,13 +302,14 @@ position:relative;
   background:#5c42e0;
   transform:translateY(-2px);
   box-shadow:0 8px 24px rgba(111,82,255,.4);
-}
+}  
 @media(max-width:700px){
   .hero-top{padding:20px 24px}
   .menu a{margin-left:14px;font-size:12px}
   .logo{font-size:.72rem}
-.mob-br{display:none;}}
-@media(max-width:768px){
+.mob-only{display:none;}
+.desk-only{display:block;}
+   @media(max-width:768px){
   .hero{background-position:right top;min-height:auto}
   .hero-main{padding:6rem 1.5rem 2rem 1.8rem;justify-content:flex-start;min-height:auto}
   .hero-content{padding:20px 20px 20px 24px}
@@ -320,7 +321,9 @@ position:relative;
   .pkg-desc{color:#000000;}
   .t-body{color:#000000;}
   .pkg-sessions{color:#000000;}
-.mob-br{display:block;}
+  .mob-br{display:block;}
+  .mob-only{display:block;}
+  .desk-only{display:none;}
 }
 /* ═══════════════════════════════════════════
    SECTION WRAPPER
@@ -960,7 +963,7 @@ footer{
       <p class="eyebrow">INTEGRACIÓN CABALÁ Y PNL</p>
       <h1>Comprende<br class="mob-br"> lo que <em>hoy te<br class="mob-br"> bloquea</em>.</h1>
       <p class="subtext">
-        Integro Cabalá y PNL para transformar tu mundo interno en claridad y dirección.
+Integro Cabalá y PNL<br class="mob-br">para transformar tu mundo<br class="mob-br">interno en claridad y dirección.
       </p>
       <a href="#contacto" class="btn btn-hero">Agenda tu sesión</a>
     </div>
@@ -1000,7 +1003,8 @@ footer{
 <!-- ══════════════ ÁRBOL ══════════════ -->
 <section id="arbol">
   <div class="section-wrap">
-
+<p class="tree-hint reveal reveal-d2">Explora una dimensión y empieza a descubrirte.</p>
+    </div>
     <div class="tree-svg-wrap reveal reveal-d1">
       <svg id="treeSVG" viewBox="0 0 340 610" xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -1274,7 +1278,8 @@ footer{
         <p class="arbol-intro">
           Cada dimensión (Sefirá) refleja una parte de ti que hoy está pidiendo ser vista, comprendida o transformada. Haz clic en una dimensión (Sefirá) y descubre qué está pasando en tu interior... y cómo empezar a moverlo.
         </p>
-      </div>
+      <p class="tree-hint reveal reveal-d2 desk-only">Explora una dimensión y empieza a descubrirte.</p>
+/div>
       <p class="tree-hint reveal reveal-d2">Explora una dimensión y empieza a descubrirte.</p>
     </div>
 
