@@ -307,7 +307,7 @@ body::after{
   .hero-top{padding:20px 24px}
   .menu a{margin-left:14px;font-size:12px}
   .logo{font-size:.72rem}
-  .mob-only{display:none;}
+ .mob-only { display: inline-block; }
   .desk-only{display:block;}
 }
 @media(max-width:768px){
@@ -331,6 +331,8 @@ body::after{
   #historia .hist-right{display:none;}
   #historia .inner.hist-open .hist-right{display:block;}
 }
+#historia .hist-right { display: none; }
+#historia .inner.hist-open .hist-right { display: block; }   
 /* ═══════════════════════════════════════════
    SECTION WRAPPER
 ═══════════════════════════════════════════ */
@@ -383,6 +385,10 @@ body::after{
   padding:1rem 1.2rem;
   border-left:2px solid var(--c-lav3);
 }
+ .hist-toggle{background:none;border:1px solid var(--c-violet);color:var(--c-violet);padding:.7rem 1.5rem;border-radius:50px;font-size:.85rem;cursor:pointer;margin-bottom:1rem;}
+.mob-only{display:inline-block;}
+#historia .hist-right{display:none;}
+#historia .inner.hist-open .hist-right{display:block;}  
 .hist-right .t-h2{text-align:left;margin-bottom:2rem}
 .hist-body{display:flex;flex-direction:column;gap:1.4rem}
 .hist-body p{text-align:left}
