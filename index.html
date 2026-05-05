@@ -192,10 +192,14 @@ body::after{
 .hero{
   position:relative;
   min-height:auto;
-  background-color:var(--c-bg);
+  background:
+    linear-gradient(180deg, rgba(110,80,100,.35) 0%, rgba(110,80,100,.45) 60%, rgba(110,80,100,.65) 100%),
+    url('begonia-hero.jpg') center/cover no-repeat,
+    var(--c-bg);
   color:#fff;
   display:flex;
   flex-direction:column;
+
 }
 .overlay{display:none}
 .hero-main{
