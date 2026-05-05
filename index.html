@@ -11,7 +11,7 @@
    TOKENS & RESET
 ═══════════════════════════════════════════ */
 :root {
-  --c-bg:        #F9F7F4;
+  --c-bg:        #F9F7F4; 
   --c-bg2:       #F4F1EC;
   --c-white:     #FFFFFF;
   --c-lav0:      #F7F4FF;
@@ -871,7 +871,7 @@ footer{
   #historia .inner{grid-template-columns:1fr;gap:3rem}
   .hist-left{position:static}
   .hist-photo{max-width:260px;margin:0 auto}
-  .cards-row{grid-template-columns:1fr}
+  .cards-row{grid-template-columns:1fr} 
   .pathway-grid{grid-template-columns:repeat(2,1fr)}
   .pathway-header{grid-template-columns:1fr;text-align:left}
   .pathway-price-block{text-align:left}
@@ -952,7 +952,29 @@ footer{
 .hero .eyebrow{
   color:#f5e9ff !important;
   text-shadow: 0 2px 6px rgba(0,0,0,.7) !important;
-}</style>
+}
+.frase-alma{
+  padding:5rem 1.5rem;
+  background:linear-gradient(180deg,var(--c-bg) 0%,#0d0420 100%);
+  text-align:center;
+}
+.frase-alma-wrap{
+  max-width:800px;margin:0 auto;
+}
+.frase-alma-texto{
+  font-family:'Cinzel',serif;
+  font-size:1.6rem;
+  line-height:1.6;
+  color:#e8d8ff;
+  font-style:italic;
+  letter-spacing:.02em;
+  margin:0;
+}
+@media(max-width:768px){
+  .frase-alma{padding:3.5rem 1.5rem;}
+  .frase-alma-texto{font-size:1.25rem;line-height:1.5;}
+}
+</style>
    
 </head>
 <body>
@@ -1008,16 +1030,20 @@ Integro Cabalá y PNL<br class="mob-br">para transformar tu mundo<br class="mob-
   </div>
 </section>
 
-<!-- ══════════════ HISTORIA ══════════════ -->
+<!-- ══════════════ FRASE DESTACADA ══════════════ -->
+<section class="frase-alma">
+  <div class="frase-alma-wrap">
+    <p class="frase-alma-texto">"El alma no necesita ser reparada. Necesita ser recordada — y vuelta a habitarse."</p>
+  </div>
+</section>
+   <!-- ══════════════ HISTORIA ══════════════ -->
 <section id="historia">
   <div class="section-wrap">
     <div class="inner">
       <div class="hist-left reveal">
      
         
-        <blockquote class="hist-quote">
-          "El alma no necesita ser reparada. Necesita ser recordada — y vuelta a habitarse."
-        </blockquote>
+        
         <button class="mob-only hist-toggle" onclick="
           var inner = this.closest('.inner');
           inner.classList.toggle('hist-open');
