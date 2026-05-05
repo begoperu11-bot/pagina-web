@@ -974,7 +974,151 @@ footer{
   .frase-alma{padding:3.5rem 1.5rem;}
   .frase-alma-texto{font-size:1.25rem;line-height:1.5;}
 }
-</style>
+/* ===== NUEVO HERO ===== */
+.hero{
+  position:relative;
+  min-height:90vh;
+  background:radial-gradient(circle at 70% 50%, #2a1a4a 0%, #0f0420 70%);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  padding:0;
+  overflow:hidden;
+}
+.hero-main{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:0;
+  align-items:center;
+  min-height:90vh;
+}
+.hero-content{
+  padding:4rem 3rem 4rem 5rem;
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+  z-index:2;
+}
+.hero-eyebrow{
+  font-family:'Cinzel',serif;
+  font-size:.7rem;
+  letter-spacing:.4em;
+  text-transform:uppercase;
+  color:#c9a8ff;
+  display:inline-block;
+  position:relative;
+  padding-left:0;
+}
+.hero-eyebrow::after{
+  content:'';
+  display:block;
+  width:60px;
+  height:1px;
+  background:linear-gradient(90deg, #c9a8ff, transparent);
+  margin-top:.6rem;
+}
+.hero-title{
+  font-family:'Cormorant Garamond','Playfair Display',serif;
+  font-size:4rem;
+  line-height:1.05;
+  font-weight:400;
+  color:#fff;
+  margin:0;
+  letter-spacing:-.01em;
+}
+.hero-title em{
+  font-style:italic;
+  color:#c9a8ff;
+  font-weight:300;
+}
+.hero-desc{
+  font-size:1.05rem;
+  line-height:1.7;
+  color:#d8c9ee;
+  max-width:480px;
+  margin:0;
+}
+.hero-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.7rem;
+  background:linear-gradient(135deg, #a574e8 0%, #7d4dd0 100%);
+  color:#fff;
+  text-decoration:none;
+  padding:1.1rem 2.2rem;
+  border-radius:50px;
+  font-family:'Cinzel',serif;
+  font-size:.85rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-weight:500;
+  width:fit-content;
+  margin-top:.5rem;
+  box-shadow:0 0 40px rgba(165,116,232,.5), 0 0 80px rgba(165,116,232,.25);
+  transition:all .3s ease;
+}
+.hero-btn:hover{
+  box-shadow:0 0 60px rgba(165,116,232,.7), 0 0 100px rgba(165,116,232,.35);
+  transform:translateY(-2px);
+}
+.hero-btn-icon{font-size:1rem;}
+.hero-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  border:1px solid rgba(201,168,255,.4);
+  background:rgba(201,168,255,.08);
+  color:#c9a8ff;
+  padding:.55rem 1.2rem;
+  border-radius:50px;
+  font-size:.8rem;
+  letter-spacing:.05em;
+  width:fit-content;
+  margin-top:1rem;
+}
+.hero-badge-icon{font-size:.9rem;}
+.hero-photo{
+  position:relative;
+  height:90vh;
+  overflow:hidden;
+}
+.hero-photo::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse at center, transparent 40%, #0f0420 100%);
+  z-index:1;
+}
+.hero-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+@media(max-width:768px){
+  .hero{min-height:auto;}
+  .hero-main{
+    grid-template-columns:1fr;
+    min-height:auto;
+  }
+  .hero-content{
+    padding:3rem 1.5rem 2rem;
+    order:2;
+    text-align:left;
+  }
+  .hero-title{font-size:2.5rem;}
+  .hero-desc{font-size:.95rem;}
+  .hero-photo{
+    height:50vh;
+    order:1;
+  }
+  .hero-eyebrow::after{margin-top:.4rem;}
+  .hero-btn{font-size:.78rem;padding:1rem 1.8rem;}
+}</style>
    
 </head>
 <body>
@@ -1026,6 +1170,25 @@ footer{
 Integro Cabalá y PNL<br class="mob-br">para transformar tu mundo<br class="mob-br">interno en claridad y dirección.
       </p>
       <a href="#contacto" class="btn btn-hero">Agenda tu sesión</a>
+    </div>
+  </div>
+<section id="hero" class="hero">
+  <div class="hero-main">
+    <div class="hero-content">
+      <span class="hero-eyebrow">ACOMPAÑAMIENTO 1:1</span>
+      <h1 class="hero-title">Comprende lo que <em>hoy te bloquea</em></h1>
+      <p class="hero-desc">Un espacio de claridad interior para ordenar tus emociones, mirar tu proceso con conciencia y encontrar un próximo paso.</p>
+      <a href="#contacto" class="hero-btn">
+        <span class="hero-btn-icon">✦</span>
+        AGENDA TU SESIÓN
+      </a>
+      <div class="hero-badge">
+        <span class="hero-badge-icon">✿</span>
+        Claridad interior
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="begonia-hero.jpg" alt="Begonia Portocarrero">
     </div>
   </div>
 </section>
