@@ -3,164 +3,421 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salmo 145 · Ashrei — Un recurso de lectura y meditación | Begonia Portocarrero</title>
-<meta name="description" content="Salmo 145 (Ashrei) para leer con calma: versículos en hebreo y español, una guía sencilla para meditarlo y su significado dentro de la tradición. Un recurso de consulta, sin prisa.">
+<title>Begonia Portocarrero · Acompañamiento 1:1 en Kábala y PNL</title>
+<meta name="description" content="Sesiones 1:1 online para mirar lo que estás viviendo, ordenar tus emociones y reconectar contigo desde el Árbol de la Vida, integrando herramientas de PNL.">
 <meta name="author" content="Begonia Portocarrero">
-<link rel="canonical" href="https://begoniaportocarrero.com/salmo-145.html">
+<link rel="canonical" href="https://begoniaportocarrero.com/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<!-- Apariencia del navegador -->
 <meta name="theme-color" content="#FDFBF7">
+
+<!-- Iconos -->
 <link rel="icon" href="./favicon.ico" sizes="any">
 <link rel="icon" href="./favicon-32x32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180">
-<meta property="og:type" content="article">
+
+<!-- Open Graph: WhatsApp, Facebook, LinkedIn -->
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="Begonia Portocarrero">
 <meta property="og:locale" content="es_ES">
-<meta property="og:url" content="https://begoniaportocarrero.com/salmo-145.html">
-<meta property="og:title" content="Salmo 145 · Ashrei — Un recurso de lectura y meditación">
-<meta property="og:description" content="Un espacio para leer el Salmo 145 con calma: hebreo y español, una guía sencilla para meditarlo y su significado.">
+<meta property="og:url" content="https://begoniaportocarrero.com/">
+<meta property="og:title" content="Begonia Portocarrero · Acompañamiento 1:1 en Kábala y PNL">
+<meta property="og:description" content="Un espacio 1:1 para mirar tu proceso con claridad y calma, desde la Kábala práctica y el Árbol de la Vida.">
 <meta property="og:image" content="https://begoniaportocarrero.com/og-image.jpg">
 <meta property="og:image:secure_url" content="https://begoniaportocarrero.com/og-image.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Salmo 145 · Ashrei">
+<meta property="og:image:alt" content="Begonia Portocarrero · Acompañamiento 1:1 online">
+
+<!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Salmo 145 · Ashrei — Un recurso de lectura y meditación">
-<meta name="twitter:description" content="Un espacio para leer el Salmo 145 con calma, con su significado dentro de la tradición.">
+<meta name="twitter:title" content="Begonia Portocarrero · Acompañamiento 1:1 en Kábala y PNL">
+<meta name="twitter:description" content="Sesiones 1:1 online para ordenar tus emociones y reconectar contigo, desde la Kábala práctica y la PNL.">
 <meta name="twitter:image" content="https://begoniaportocarrero.com/og-image.jpg">
-<meta name="twitter:image:alt" content="Salmo 145 · Ashrei">
+<meta name="twitter:image:alt" content="Begonia Portocarrero · Acompañamiento 1:1 online">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
+  /* Paleta natural — crema, verde profundo, salvia y negro */
   --cream: #fdfbf7;
   --green-deep: #1c352d;
   --sage: #6e8b7e;
   --ink: #000000;
+
+  /* Modo principal (claro) */
   --bg: #fdfbf7;
   --bg-soft: #f6f2ea;
   --bg-card: #fdfbf7;
   --bg-card-hover: #f6f2ea;
   --border: rgba(110, 139, 126, 0.45);
   --border-soft: rgba(110, 139, 126, 0.25);
+  --purple-light: #6e8b7e;
+  --lavender: #6e8b7e;
   --text: #000000;
+  /* Salvia oscurecida solo para texto pequeño — mismo tono (H 153°) y saturación que --sage, menor luminosidad. Cumple WCAG 2.2 AA (>=4.5:1) sobre crema y sobre --bg-soft. */
   --sage-text: #5a7267;
   --text-soft: #5a7267;
   --text-muted: #5a7267;
   --heading: #1c352d;
+  --gold: #1c352d;
   --gold-line: #6e8b7e;
   --gold-glow: rgba(28, 53, 45, 0.14);
+  --wa: #1c352d;
   --serif: 'Cormorant Garamond', Georgia, serif;
   --sans: 'Inter', system-ui, sans-serif;
   --max: 1180px;
-  --read: 720px;
   --ease: cubic-bezier(0.33, 1, 0.68, 1);
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-.skip-link { position: absolute; left: -9999px; top: 0; z-index: 2000; background: var(--green-deep); color: var(--cream); padding: 12px 20px; border-radius: 0 0 10px 0; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; }
-.skip-link:focus { left: 0; }
-html { scroll-behavior: smooth; }
-body { background: var(--bg); color: var(--text); font-family: var(--sans); font-weight: 300; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-h1, h2, h3, h4 { font-family: var(--serif); color: var(--heading); font-weight: 500; line-height: 1.15; }
+.skip-link { position: fixed; left: 0; top: 0; z-index: 2000; background: var(--green-deep); color: var(--cream); padding: 12px 20px; border-radius: 0 0 10px 0; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; transform: translateY(-120%); transition: transform 0.2s var(--ease); }
+.skip-link:focus { transform: translateY(0); }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body {
+  background: var(--bg); color: var(--text); font-family: var(--sans);
+  font-weight: 300; line-height: 1.7; -webkit-font-smoothing: antialiased;
+  transition: background 0.6s var(--ease), color 0.6s var(--ease); overflow-x: hidden;
+}
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
-.read { max-width: var(--read); margin: 0 auto; padding: 0 24px; }
-
-/* NAV */
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.12; letter-spacing: 0.005em; color: var(--heading); }
+::selection { background: var(--gold-glow); color: var(--text); }
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 1.1s var(--ease), transform 1.1s var(--ease); }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+/* Nav */
 .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 16px 32px; backdrop-filter: blur(14px); background: color-mix(in srgb, var(--bg) 82%, transparent); border-bottom: 1px solid var(--border-soft); }
 .nav-logo { display: inline-flex; align-items: center; text-decoration: none; flex-shrink: 0; line-height: 0; }
 .nav-logo img.logo { width: 120px; height: auto; display: block; }
-.nav-back { font-family: var(--sans); font-size: 0.86rem; letter-spacing: 0.02em; color: var(--heading); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 8px 0; transition: color 0.3s var(--ease); }
-.nav-back:hover { color: var(--sage); }
-.nav-back svg { width: 16px; height: 16px; }
+.nav-links { list-style: none; display: flex; align-items: center; gap: 26px; margin: 0; padding: 0; }
+.nav-links a { font-family: var(--sans); font-size: 0.86rem; font-weight: 400; letter-spacing: 0.02em; color: var(--heading); text-decoration: none; position: relative; padding: 4px 0; transition: color 0.3s var(--ease); white-space: nowrap; }
+.nav-links a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -2px; height: 1px; background: var(--sage); transition: right 0.35s var(--ease); }
+.nav-links a:hover { color: var(--sage); }
+.nav-links a:hover::after { right: 0; }
+.nav-links a.nav-wa { border: 1px solid var(--sage); border-radius: 100px; padding: 7px 18px; color: var(--heading); }
+.nav-links a.nav-wa::after { display: none; }
+.nav-links a.nav-wa:hover { background: var(--green-deep); color: var(--cream); border-color: var(--green-deep); }
+.nav-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
 
-/* BUTTONS */
+/* Hamburger + mobile menu */
+.nav-burger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 42px; height: 42px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 100px; cursor: pointer; padding: 0 11px; transition: all 0.4s var(--ease); }
+.nav-burger span { display: block; height: 1.5px; width: 100%; background: var(--heading); border-radius: 2px; transition: transform 0.4s var(--ease), opacity 0.3s var(--ease); }
+.nav-burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-burger.open span:nth-child(2) { opacity: 0; }
+.nav-burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.mobile-menu { position: fixed; top: 71px; left: 0; right: 0; z-index: 99; background: var(--bg); border-bottom: 1px solid var(--border); max-height: 0; overflow: hidden; transition: max-height 0.5s var(--ease); }
+.mobile-menu.open { max-height: 80vh; }
+.mobile-menu ul { list-style: none; margin: 0; padding: 12px 24px 24px; }
+.mobile-menu li { border-bottom: 1px solid var(--border-soft); }
+.mobile-menu li:last-child { border-bottom: none; margin-top: 12px; }
+.mobile-menu a { display: block; font-family: var(--serif); font-size: 1.25rem; color: var(--heading); text-decoration: none; padding: 16px 4px; transition: color 0.3s var(--ease); }
+.mobile-menu a:hover { color: var(--sage); }
+.mobile-menu a.mobile-wa { font-family: var(--sans); font-size: 0.95rem; text-align: center; background: var(--green-deep); color: var(--cream); border-radius: 100px; padding: 15px; }
+
+/* Buttons */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-family: var(--sans); font-size: 0.92rem; font-weight: 500; letter-spacing: 0.01em; padding: 15px 30px; border-radius: 100px; border: 1px solid transparent; cursor: pointer; text-decoration: none; transition: all 0.45s var(--ease); }
-.btn-secondary { background: transparent; color: var(--heading); border: 1px solid var(--sage); }
+.btn-primary { background: var(--green-deep); color: var(--cream); }
+.btn-primary:hover { box-shadow: 0 6px 28px var(--gold-glow); transform: translateY(-2px); }
+.btn-primary:focus-visible { outline: 2px solid var(--gold-line); outline-offset: 4px; }
+.btn-secondary { background: transparent; color: var(--heading); border-color: var(--sage); }
 .btn-secondary:hover { border-color: var(--green-deep); background: var(--bg-soft); transform: translateY(-2px); }
 .btn-secondary:focus-visible { outline: 2px solid var(--sage); outline-offset: 4px; }
-.btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+.btn svg { width: 18px; height: 18px; }
 
-/* HERO / HEADER */
-.article-head { padding: 180px 0 60px; text-align: center; }
-.eyebrow { font-family: var(--sans); font-size: 0.74rem; font-weight: 400; letter-spacing: 0.28em; text-transform: uppercase; color: var(--sage-text); margin-bottom: 28px; }
-.article-head h1 { font-size: clamp(3rem, 7vw, 5rem); letter-spacing: 0.01em; margin-bottom: 14px; }
-.article-subtitle { font-family: var(--serif); font-size: clamp(1.5rem, 3vw, 2rem); color: var(--sage-text); font-weight: 400; margin-bottom: 4px; }
-.article-subtitle .heb { font-size: 1.15em; margin-left: 8px; }
-.subtitle-gloss { max-width: 36em; margin: 26px auto 0; font-size: 1.05rem; color: var(--text); line-height: 1.7; }
+/* Hero */
+.hero { padding: 170px 0 110px; position: relative; }
+.hero::before { content: ""; position: absolute; top: 14%; left: 2%; width: 420px; height: 420px; background: radial-gradient(circle, color-mix(in srgb, var(--lavender) 7%, transparent), transparent 70%); filter: blur(56px); pointer-events: none; z-index: 0; }
+.hero-grid { display: grid; grid-template-columns: 1fr 0.9fr; gap: 72px; align-items: center; position: relative; z-index: 1; }
+.hero-eyebrow { font-family: var(--sans); font-size: 0.74rem; font-weight: 400; letter-spacing: 0.28em; text-transform: uppercase; color: var(--sage-text); margin-bottom: 30px; }
+.hero h1 { font-size: clamp(2.6rem, 5.2vw, 4.3rem); margin-bottom: 30px; }
+.hero h1 em { font-style: italic; color: var(--lavender); }
+.hero-sub { font-size: 1.25rem; color: var(--sage-text); max-width: 30em; margin-bottom: 40px; font-weight: 300; font-family: var(--serif); font-style: italic; }
+.hero-cta-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+.hero-note { margin-top: 22px; font-size: 0.88rem; color: var(--text-muted); }
 
-/* SECTIONS */
-.section { padding: 56px 0; }
-.section.tight { padding: 40px 0; }
-.section h2 { font-size: clamp(1.7rem, 3.4vw, 2.3rem); margin-bottom: 22px; }
-.section h3 { font-size: 1.3rem; margin-bottom: 12px; color: var(--heading); }
-.lede { font-size: 1.18rem; color: var(--text); line-height: 1.8; }
-.prose p { font-size: 1.08rem; color: var(--text); line-height: 1.8; margin-bottom: 20px; }
-.prose p:last-child { margin-bottom: 0; }
-.divider { width: 60px; height: 1px; background: var(--gold-line); margin: 0 auto; opacity: 0.6; }
+/* Portrait */
+.portrait { aspect-ratio: 4/5; border-radius: 16px; border: 1px solid var(--border); position: relative; overflow: hidden; }
+.portrait-img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
 
-/* HOW TO USE — guía suave */
-.guide { list-style: none; display: flex; flex-direction: column; gap: 18px; margin-top: 30px; }
-.guide li { display: flex; align-items: flex-start; gap: 16px; }
-.guide .g-mark { flex-shrink: 0; width: 22px; height: 22px; color: var(--sage); margin-top: 3px; }
-.guide p { font-size: 1.08rem; color: var(--text); line-height: 1.65; margin: 0; }
+/* Section base */
+.section { padding: 120px 0; position: relative; scroll-margin-top: 80px; }
+.section-label { font-family: var(--sans); font-size: 0.72rem; font-weight: 400; letter-spacing: 0.28em; text-transform: uppercase; color: var(--sage-text); margin-bottom: 22px; display: block; }
+.section-title { font-size: clamp(2.2rem, 4vw, 3.1rem); margin-bottom: 26px; max-width: 18em; }
+.section-intro { font-size: 1.12rem; color: var(--text); max-width: 42em; }
 
-/* SALMO — versículos */
-.psalm { margin-top: 10px; border: 1px solid var(--border); border-radius: 18px; background: var(--bg-card); padding: 52px 40px; }
-.verse { text-align: center; }
-.verse + .verse { margin-top: 40px; padding-top: 40px; border-top: 1px solid var(--border); }
-.verse-ref { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--sage-text); margin-bottom: 22px; }
-.verse-heb { font-family: 'Cormorant Garamond', 'Times New Roman', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); line-height: 1.8; color: var(--heading); direction: rtl; unicode-bidi: isolate; margin-bottom: 14px; }
-.verse-rtl-note { font-family: var(--sans); font-size: 0.78rem; color: var(--sage-text); margin-bottom: 20px; display: inline-flex; align-items: center; gap: 6px; }
-.verse-es { font-family: var(--serif); font-size: clamp(1.15rem, 2.4vw, 1.4rem); font-style: italic; color: var(--text); line-height: 1.6; max-width: 30em; margin: 0 auto; }
+/* Interactive tree */
+.tree-section { background: var(--bg-soft); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
+.tree-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; margin-top: 50px; }
+.tree-interactive-wrap { display: flex; justify-content: center; }
+.tree-interactive { width: 100%; max-width: 440px; height: auto; }
+.sefira-node { cursor: pointer; }
+.sefira-circle { transition: all 0.4s var(--ease); transform-box: fill-box; transform-origin: center; fill: var(--bg); stroke: var(--sage); stroke-width: 1.5; }
+.sefira-node:hover .sefira-circle { fill: var(--bg-card-hover); stroke: var(--green-deep); }
+.sefira-node.active .sefira-circle { fill: var(--green-deep); stroke: var(--green-deep); }
+.sefira-node:focus-visible { outline: none; }
+.sefira-node:focus-visible .sefira-circle { stroke: var(--green-deep); stroke-width: 2.5; }
+.sefira-label { font-family: var(--sans); font-size: 9px; fill: var(--sage); text-anchor: middle; pointer-events: none; letter-spacing: 0.02em; transition: fill 0.4s var(--ease); }
+.sefira-heb { font-family: var(--serif); font-size: 13px; fill: var(--green-deep); text-anchor: middle; pointer-events: none; transition: fill 0.4s var(--ease); }
+.sefira-node.active .sefira-heb { fill: var(--cream); }
+.sefira-node.active .sefira-label { fill: var(--cream); }
+.sefira-panel { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 40px; min-height: 340px; display: flex; flex-direction: column; transition: all 0.5s var(--ease); }
+.panel-empty { align-items: center; justify-content: center; text-align: center; height: 100%; display: flex; flex-direction: column; }
+.panel-empty-icon { width: 44px; height: 44px; margin-bottom: 20px; opacity: 0.55; }
+.panel-empty p { color: var(--text-muted); font-size: 1.05rem; max-width: 22em; }
+.panel-content { display: none; }
+.panel-content.show { display: flex; flex-direction: column; animation: fadeUp 0.7s var(--ease); }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.panel-heb { font-family: var(--serif); font-size: 2.4rem; color: var(--gold-line); line-height: 1; margin-bottom: 6px; }
+.panel-translit { font-family: var(--sans); font-size: 0.82rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px; }
+.panel-name { font-family: var(--serif); font-size: 1.7rem; color: var(--text); margin-bottom: 28px; }
+.panel-divider { height: 1px; background: linear-gradient(90deg, var(--gold-line), transparent); margin-bottom: 28px; }
+.panel-q-label { font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--sage-text); margin-bottom: 12px; }
+.panel-q { font-family: var(--serif); font-size: 1.6rem; font-style: italic; color: var(--text-soft); line-height: 1.4; }
 
-/* DOWNLOAD */
-.download-row { text-align: center; margin-top: 44px; }
-.download-note { font-size: 0.95rem; color: var(--text-muted); margin-top: 16px; max-width: 32em; margin-left: auto; margin-right: auto; }
+/* For whom */
+.whom-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 46px; }
+.whom-item { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 32px; transition: all 0.45s var(--ease); }
+.whom-item:hover { border-color: var(--gold-line); transform: translateY(-4px); background: var(--bg-card-hover); }
+.whom-item .icon { width: 30px; height: 30px; color: var(--gold-line); margin-bottom: 18px; }
+.whom-item h4 { font-family: var(--sans); font-size: 1.02rem; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+.whom-item p { font-size: 0.92rem; color: var(--text); }
 
-/* SIGNIFICADO */
-.meaning-block { margin-top: 30px; }
-.meaning-block .prose p { margin-bottom: 22px; }
-.pullquote { font-family: var(--serif); font-style: italic; font-size: clamp(1.3rem, 3vw, 1.7rem); color: var(--heading); line-height: 1.5; border-left: 2px solid var(--sage); padding-left: 26px; margin: 32px 0; }
-
-/* FOOTER */
-.footer { padding: 60px 0; border-top: 1px solid var(--border-soft); text-align: center; margin-top: 40px; }
-.footer .footer-logo { font-family: var(--serif); font-size: 1.2rem; color: var(--text-soft); margin-bottom: 10px; }
-.footer p { color: var(--text-muted); font-size: 0.86rem; margin-bottom: 18px; }
-.footer .footer-link { font-family: var(--sans); font-size: 0.86rem; color: var(--heading); text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color 0.3s var(--ease), border-color 0.3s var(--ease); }
-.footer .footer-link:hover { color: var(--sage); border-color: var(--sage); }
-
-/* REVEAL */
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity 1s var(--ease), transform 1s var(--ease); }
-.reveal.in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
-
+/* Para quién — lista de resonancia */
+.resonate-wrap { max-width: 720px; margin: 46px auto 0; }
+.resonate-lead { font-family: var(--serif); font-size: 1.5rem; color: var(--heading); margin-bottom: 30px; letter-spacing: 0.01em; }
+.resonate-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 20px; }
+.resonate-list li { display: flex; align-items: flex-start; gap: 16px; }
+.resonate-list .r-mark { flex-shrink: 0; width: 22px; height: 22px; color: var(--sage); margin-top: 3px; }
+.resonate-list p { font-size: 1.08rem; color: var(--text); line-height: 1.65; margin: 0; }
 @media (max-width: 640px) {
-  .nav { padding: 14px 20px; }
+  .resonate-lead { font-size: 1.3rem; }
+  .resonate-list p { font-size: 1rem; }
+}
+/* Variante en cartillas */
+.resonate-list.cards { gap: 16px; }
+.resonate-list.cards li { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 24px 28px; align-items: center; transition: all 0.45s var(--ease); }
+.resonate-list.cards li:hover { border-color: var(--gold-line); transform: translateY(-4px); background: var(--bg-card-hover); }
+@media (max-width: 640px) {
+  .resonate-list.cards li { padding: 20px 22px; }
+}
+
+/* Sessions */
+.sessions-section { background: var(--bg-soft); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
+.sessions-intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 46px; margin-bottom: 50px; }
+.session-mode { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 36px; }
+.session-mode h3 { font-family: var(--serif); font-size: 1.5rem; color: var(--text); margin-bottom: 12px; }
+.session-mode p { color: var(--text); font-size: 1rem; }
+.session-mode .tag { display: inline-block; font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--sage-text); margin-bottom: 16px; }
+.journey-label { font-family: var(--sans); font-size: 0.76rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage-text); margin-bottom: 24px; text-align: center; }
+.journey { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.journey-step { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 30px 26px; position: relative; transition: all 0.45s var(--ease); }
+.journey-step:hover { border-color: var(--gold-line); transform: translateY(-4px); }
+.journey-step .num { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; color: var(--heading); width: 40px; height: 40px; border: 1.5px solid var(--sage); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+.journey-step h4 { font-family: var(--serif); font-size: 1.25rem; color: var(--text); margin-bottom: 8px; font-weight: 500; }
+.journey-step p { font-size: 0.9rem; color: var(--text); }
+.journey-note { text-align: center; color: rgba(28, 53, 45, 0.85); font-size: 0.96rem; margin-top: 28px; font-style: italic; font-family: var(--serif); }
+
+/* Story — desplegable (mismo patrón que Conexión) */
+.story-head { text-align: center; }
+.story-head .section-label { font-family: var(--serif); font-size: clamp(2rem, 3.6vw, 2.8rem); font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: var(--heading); margin-bottom: 20px; }
+.story-intro { font-size: 1.15rem; color: var(--sage-text); max-width: 30em; margin: 0 auto 40px; font-family: var(--serif); font-style: italic; }
+.story-reveal { margin: 0 auto; max-width: 760px; }
+.story-toggle-wrap { display: flex; justify-content: center; }
+.story-toggle { display: inline-flex; background: transparent; border: 1px solid var(--sage); cursor: pointer; padding: 15px 34px; align-items: center; justify-content: center; gap: 14px; border-radius: 100px; transition: all 0.4s var(--ease); }
+.story-toggle:hover { background: var(--green-deep); }
+.story-toggle:hover .story-toggle-label, .story-toggle:hover .story-icon { color: var(--cream); }
+.story-toggle:focus-visible { outline: 2px solid var(--sage); outline-offset: 4px; }
+.story-toggle-label { font-family: var(--serif); font-size: 1.35rem; color: var(--heading); letter-spacing: 0.01em; transition: color 0.4s var(--ease); }
+.story-icon { flex-shrink: 0; width: 20px; height: 20px; color: var(--sage); transition: transform 0.5s var(--ease), color 0.4s var(--ease); }
+.story-reveal.open .story-icon { transform: rotate(45deg); }
+.story-body { max-height: 0; overflow: hidden; transition: max-height 0.7s var(--ease); }
+.story-body-inner { margin-top: 32px; padding: 48px; border: 1px solid var(--border); border-radius: 16px; background: var(--bg-card); }
+.story-body-inner p { font-size: 1.12rem; color: var(--text); line-height: 1.75; margin: 22px 0 0; }
+.story-body-inner p:first-child { margin-top: 0; }
+.story-body-inner p:first-child::first-letter { font-family: var(--serif); font-size: 3.4rem; float: left; line-height: 0.8; margin: 6px 12px 0 0; color: var(--heading); }
+.story-body-quote { font-family: var(--serif); font-style: italic; font-size: 1.35rem !important; color: var(--heading) !important; border-left: 2px solid var(--sage); padding-left: 22px; margin-top: 32px !important; }
+
+/* Acompañamiento — desplegable + acordeón */
+.accomp-reveal { margin: 0 auto; max-width: 760px; }
+.accomp-toggle-wrap { display: flex; justify-content: center; }
+.accomp-toggle { display: inline-flex; background: transparent; border: 1px solid var(--sage); cursor: pointer; padding: 15px 34px; align-items: center; justify-content: center; gap: 14px; border-radius: 100px; transition: all 0.4s var(--ease); }
+.accomp-toggle:hover { background: var(--green-deep); }
+.accomp-toggle:hover .accomp-toggle-label, .accomp-toggle:hover .accomp-toggle-icon { color: var(--cream); }
+.accomp-toggle:focus-visible { outline: 2px solid var(--sage); outline-offset: 4px; }
+.accomp-toggle-label { font-family: var(--serif); font-size: 1.35rem; color: var(--heading); letter-spacing: 0.01em; transition: color 0.4s var(--ease); }
+.accomp-toggle-icon { flex-shrink: 0; width: 20px; height: 20px; color: var(--sage); transition: transform 0.5s var(--ease), color 0.4s var(--ease); }
+.accomp-reveal.open .accomp-toggle-icon { transform: rotate(45deg); }
+.accomp-panel { max-height: 0; overflow: hidden; transition: max-height 0.7s var(--ease); }
+.accomp-panel-inner { margin-top: 32px; display: flex; flex-direction: column; gap: 14px; }
+.accomp-item { border: 1px solid var(--border); border-radius: 16px; background: var(--bg-card); overflow: hidden; transition: border-color 0.4s var(--ease); }
+.accomp-item.open { border-color: var(--sage); }
+.accomp-item-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 18px; background: transparent; border: none; cursor: pointer; padding: 26px 32px; text-align: left; transition: background 0.4s var(--ease); }
+.accomp-item-btn:hover { background: var(--bg-card-hover); }
+.accomp-item-btn:focus-visible { outline: 2px solid var(--sage); outline-offset: -4px; border-radius: 16px; }
+.accomp-item-title { font-family: var(--serif); font-size: 1.5rem; color: var(--heading); letter-spacing: 0.01em; line-height: 1.2; }
+.accomp-item-icon { flex-shrink: 0; width: 18px; height: 18px; color: var(--sage); transition: transform 0.5s var(--ease); }
+.accomp-item.open .accomp-item-icon { transform: rotate(45deg); }
+.accomp-item-body { max-height: 0; overflow: hidden; transition: max-height 0.6s var(--ease); }
+.accomp-item-body-inner { padding: 0 32px 30px; }
+.accomp-item-body-inner p { font-size: 1.12rem; color: var(--text); line-height: 1.75; margin: 16px 0 0; }
+.accomp-item-body-inner p:first-child { margin-top: 0; }
+@media (max-width: 640px) {
+  .accomp-item-btn { padding: 22px 24px; }
+  .accomp-item-title { font-size: 1.3rem; }
+  .accomp-item-body-inner { padding: 0 24px 26px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .accomp-panel, .accomp-item-body, .accomp-toggle-icon, .accomp-item-icon, .accomp-toggle, .accomp-item, .accomp-item-btn { transition: none; }
+}
+
+/* Free resource — conexión / psalm */
+.resource-section { background: var(--bg-soft); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
+.psalm-head { text-align: center; }
+.psalm-card { max-width: 640px; margin: 30px auto 0; text-align: center; background: var(--bg-card); border: 1px solid var(--border); border-radius: 18px; padding: 56px 44px; transition: border-color 0.45s var(--ease), transform 0.45s var(--ease); }
+.psalm-card:hover { border-color: var(--gold-line); transform: translateY(-4px); }
+.psalm-card-heading { font-family: var(--serif); font-size: clamp(1.9rem, 3.6vw, 2.6rem); color: var(--heading); font-weight: 500; margin: 0 0 18px; }
+.psalm-card-text { font-size: 1.12rem; color: var(--text); line-height: 1.7; max-width: 34em; margin: 0 auto 34px; }
+.psalm-card-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+@media (max-width: 480px) {
+  .psalm-card-actions { flex-direction: column; align-items: stretch; }
+}
+
+/* FAQ */
+.faq-list { margin-top: 46px; max-width: 820px; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-q { width: 100%; background: none; border: none; text-align: left; cursor: pointer; padding: 28px 0; display: flex; justify-content: space-between; align-items: center; gap: 20px; font-family: var(--serif); font-size: 1.35rem; color: var(--text); transition: color 0.4s var(--ease); }
+.faq-q:hover { color: var(--gold-line); }
+.faq-q:focus-visible { outline: 2px solid var(--gold-line); outline-offset: 4px; border-radius: 4px; }
+.faq-icon { flex-shrink: 0; width: 22px; height: 22px; transition: transform 0.5s var(--ease); color: var(--gold-line); }
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.6s var(--ease); }
+.faq-a-inner { padding: 0 0 28px; color: var(--text); font-size: 1.05rem; max-width: 44em; }
+
+/* Final CTA */
+.final-section { background: var(--bg-soft); border-top: 1px solid var(--border-soft); position: relative; }
+.final-section::before { content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 700px; height: 400px; background: radial-gradient(ellipse, color-mix(in srgb, var(--gold-line) 9%, transparent), transparent 70%); filter: blur(40px); pointer-events: none; }
+.final-inner { max-width: 640px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+.final-inner h2 { font-size: clamp(2.1rem, 4vw, 3rem); margin-bottom: 20px; }
+.final-inner > p { color: var(--text); font-size: 1.15rem; margin-bottom: 40px; }
+.btn-wa-big { background: var(--green-deep); color: var(--cream); font-size: 1rem; padding: 17px 38px; }
+.btn-wa-big:hover { box-shadow: 0 8px 34px var(--gold-glow); transform: translateY(-2px); }
+.final-microcopy { margin-top: 20px; font-size: 0.88rem; color: var(--text-muted); }
+
+/* Footer */
+.footer { padding: 50px 0; border-top: 1px solid var(--border-soft); text-align: center; }
+.footer .footer-logo { font-family: var(--serif); font-size: 1.2rem; color: var(--text-soft); margin-bottom: 10px; }
+.footer p { color: var(--text-muted); font-size: 0.86rem; }
+
+/* WhatsApp icon button helper */
+.wa-ico { width: 19px; height: 19px; fill: currentColor; }
+
+/* Responsive */
+@media (max-width: 1080px) {
+  .nav-links { gap: 18px; }
+  .nav-links a { font-size: 0.8rem; }
+}
+@media (max-width: 760px) {
+  .nav-links { display: none; }
+  .nav-burger { display: flex; }
+}
+@media (max-width: 980px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+  .portrait { max-width: 380px; margin: 0 auto; order: -1; }
+  .tree-layout { grid-template-columns: 1fr; gap: 36px; }
+  .whom-grid { grid-template-columns: 1fr; }
+  .sessions-intro-grid { grid-template-columns: 1fr; }
+  .journey { grid-template-columns: 1fr 1fr; }
+  .story-grid { grid-template-columns: 1fr; gap: 36px; }
+  .story-portrait { max-width: 320px; margin: 0 auto; }
+  .resource-card { grid-template-columns: 1fr; text-align: center; gap: 20px; }
+  .resource-card .r-icon { margin: 0 auto; }
+  .section { padding: 72px 0; }
+}
+/* Hero portrait — móvil real (≤640px): foto casi a todo el ancho, proporción vertical equilibrada, encuadre propio */
+@media (max-width: 640px) {
+  .portrait { max-width: 440px; width: 100%; aspect-ratio: 4 / 5; border-radius: 18px; }
+  .portrait-img { object-position: center 22%; }
+}
+@media (max-width: 760px) {
   .nav-logo img.logo { width: 90px; }
-  .article-head { padding: 140px 0 48px; }
-  .psalm { padding: 38px 24px; }
-  .verse + .verse { margin-top: 30px; padding-top: 30px; }
-  .section { padding: 44px 0; }
+}
+@media (max-width: 480px) {
+  .wrap { padding: 0 20px; }
+  .nav { padding: 14px 20px; }
+  .mobile-menu { top: 67px; }
+  .hero { padding: 120px 0 60px; }
+  .hero h1 { font-size: 2.2rem; }
+  .journey { grid-template-columns: 1fr; }
+  .btn { width: 100%; }
+  .hero-cta-row .btn { width: 100%; }
+  .resource-card { padding: 32px 24px; }
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-fab {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--sage);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(28, 53, 45, 0.18);
+  z-index: 999;
+  text-decoration: none;
+  transition: background 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.whatsapp-fab svg { width: 28px; height: 28px; display: block; }
+.whatsapp-fab:hover {
+  background: var(--green-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(28, 53, 45, 0.26);
+}
+.whatsapp-fab:focus-visible { outline: 2px solid var(--green-deep); outline-offset: 4px; }
+@media (max-width: 480px) {
+  .whatsapp-fab { right: 18px; bottom: 18px; width: 52px; height: 52px; }
+  .whatsapp-fab svg { width: 26px; height: 26px; }
 }
 </style>
 <noscript>
   <style>
+    /* Sin JavaScript, todo el contenido debe ser visible */
     .reveal { opacity: 1 !important; transform: none !important; }
+    .accomp-panel, .accomp-item-body, .story-body { max-height: none !important; }
   </style>
 </noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Salmo 145 · Ashrei",
-  "description": "Salmo 145 (Ashrei) para leer con calma: versículos en hebreo y español, una guía sencilla para meditarlo y su significado dentro de la tradición.",
-  "inLanguage": "es",
-  "url": "https://begoniaportocarrero.com/salmo-145.html",
+  "@type": "ProfessionalService",
+  "name": "Begonia Portocarrero",
+  "description": "Acompañamiento 1:1 online para mirar lo que estás viviendo, ordenar tus emociones y encontrar claridad, desde la Kábala práctica y el Árbol de la Vida, integrando herramientas de PNL.",
+  "url": "https://begoniaportocarrero.com/",
   "image": "https://begoniaportocarrero.com/og-image.jpg",
-  "author": { "@type": "Person", "name": "Begonia Portocarrero" },
-  "publisher": { "@type": "Person", "name": "Begonia Portocarrero" },
-  "about": "Salmo 145, Ashrei, tradición judía, confianza, gratitud"
+  "inLanguage": "es",
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Online"
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceLocation": {
+      "@type": "VirtualLocation",
+      "name": "Google Meet"
+    }
+  },
+  "provider": {
+    "@type": "Person",
+    "name": "Begonia Portocarrero"
+  }
 }
 </script>
 </head>
@@ -169,145 +426,504 @@ h1, h2, h3, h4 { font-family: var(--serif); color: var(--heading); font-weight: 
 <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
 
 <nav class="nav">
-  <a href="./index.html" class="nav-logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN8AAABYCAYAAAB1TCJMAAAZzUlEQVR4nO2dd1hUx/rHvyO9LR0EQUEFBVSw0OzYUWPNzQ2xXaLGeE2uiYnXlkSNyU0siRg1xiRGTdFYoqKgqFEwIqChqYiIFClSFVhgqQvv7w9kw7K7LCBx+el8nmce2DnnnfPunP2eqWeGERE4HM6zp4uqHeBwXlS4+DgcFcHFx+GoCC4+DkdFcPFxOCqCi4/DURFcfByOilCZ+IKCgsjLy4tOnjxJYWFhNG7cOJo4cSIfdOS8MDBVDLKnpKTQ5MmTER8fD11dXdYY7+vrS6NGjcLq1atZS/YczvOASkq+zZs3Y8WKFVLCAwB/f39ERESowiUO55mjEvHdvn0bbm5uMvFisRh8uhvnRUEl4uvevTvi4+Nl4qOiojBkyJBn7xCHowLUVXHRuXPnwt/fH15eXuTm5sYAIDs7m8LCwnD16lVVuMThPHNUIr5p06YxPz8/GjhwIEaNGkVGRkbIz8/H8ePHYWhoyDtbOC8EKuntbCQnJ4dSUlKgq6uLIUOGcNFxXihUOshubW3NDAwMeCcL54WEz3DhcFQEFx+HoyK4+DgcFcHFx+GoCC4+DkdFcPFxOCqCi4/DURFcfByOimj19LK6ujqUlJRQWVkZAMDMzAz6+vqdblaKSCSi4uJiiMViqKurw8bGptP5yOEArSz5rl69SiNGjKDk5GTY2dmxrKwsuLi4ICgoqFNNTZk1axZt3rwZNjY2zM7Ojq1duxYTJkygqqoqVbvG4chCRC2Gmpoa2NjYUFRUFDWNP3fuHNnY2JAye2UhNjaWbty48dTpbNmyhaZOnSqTTuNSFU+bPg88dHRQWu1MSUmhkSNHwtPTU6r6NmnSJJadnU0AUFxcTGKxuF3ib6wiFhYWPlUp+umnn+LGjRsy8VOnTkVqaurTJM3h/C0oFZ9IJIKlpaVMfGlpqUQs8fHxKC8vb5cDqampqK+vR3V1dbvsGxEKhXL9LCoqQq9evaTiasVinLkYQuevhKL0SRu2q4UFDA0EiE24hV497DBv1isY1H+A5IFTVV2NuIRbdOjUb3hUVAQAMDIUwLFnb+Tm5yErJwcAMG38RPjNmC23nXknOYlCI8JhbmoGR/ueEFVWIDQiHMeDz0BTUxPjho/E+nf/y7S1tOR+x4yH2XT28kVUVVfDSGCI+Du3cT89Db162OHVaTMxzF36AVlfX48T54Lo/JXLKBdVAAB69uiBT1auZYzJuhj0+wUKvHAW5aIK2Hfvjrkz/wGHnr1Y9M04OhZ8Grn5+QAAX5+x8B7sDgf7ngrb03kF+fT2h6txbO9+3uZWhLKiMTU1lRwdHal5/LFjx2j48OEy8W0NHVXttLOzo4MHD8qk4+zsTOHh4XLT3xSwjWzc+5ONe3+qrKoEESEx+R718HKj3sPdKf5Ogoxdo42d10CqrKqSxCcm36MpC16lT3dul7EpePSI3v5wNfUePoSCL12QOV5UUkyvLF1INu796WbiHZnjYrEY277ZReP8ZtHtpESp43mFBTTvP0vJxr0/vffxh9S4FEfTcPd+MnlPnyT5rlv27FSY339cjyTv6ZOoprZWKn77999I7IuFQqX36+OArWTj3p/+uB751Pf2eQ1KO1xsbW1ZQUEBXn75ZRKJRAQA6enptH79eqxbt+7vfzq0ksWLF2PZsmUICQmRlMhffPEFmZiYYNiwYXKfvvr6+gAAdTV1aGtpAwCcHBzZACcXVFVX4WRIsIyNjra25G/TEsrJwZHt/2IX1NXUpM4X14mxdO37OBkSjL2ff4nJY8bL+GJsaMQObt/Nhrl7ouBRocw112z+hAL27cWe/21Dvz5OUvaWZuZs3xdfseHuXjhy5hT+ve6/VF9fL2Xft7cDc3V2QVdzCwDAVz98i+PBp+VW8wc4OaN/X2doqEtXinS1dST/a2tptVialYtE9MvJ4wCAgO+/aenUFxql4tPQ0EBkZCTS09Ohr68PExMTWrp0KQ4dOoRJkyZ1mirF2rVr2cqVKzFz5kwwxsjR0ZEqKytx9erVNvuop6MLoGF4pS2Ym5qyRX5zpeJ27v+ersfF4LUZL2PMsBEKfdHW0kLAhk9RJCyRiv/t7Bk6fOo3TBo9Br3t7OXaa6irY/Wy5QCAs5cvYs9P+2WEpdZFDT/t2AMDvYYHzurPPkZUbLTMeXq6ukxXR6d5dJs4dOo3DBviCQC4ER+LP65Hdqpe8c5Cq4Ya+vbty2JiYhgRsaKiIhYSEsJcXV07jfAa+eijj1hlZSUjIpacnMw++OCDNvtYXVODlAdp0NPVxWszZrfJtqS0lEyMjFnTz9/+chBAQ1tQGV3NLdhL4yZI7MV1YknJ0a+PU4u2rs4ubICTMwDgwNHDch8cfXs7sG+3fAk1NTVU19Rg8ap3kZ6Z0aHCENeJkXDvLrZ9uFEi9K17dnbkJZ4b+AyXJhARPtz2GWlraeHwrm/h5ODYavHWisX48fivUnFBv59HuUgEAOjZw65V6eg0qd4lpdynB9lZAADLJ1XGlhg62AMAkFdYgIR7SVKiImr4ONzdi3226gMAQIlQiAUr3kJJk86zpyXo9ws0bfwkGBsasYWvzgEAxCcmIDQynJd+zeDiA1BXX4eAfXvpXyveopPnguDhNghlT0SjiJraGgTs20sB+/bS2x+uJs+XxtO91BSpczKeCAcAjNuxMFRTe8GT9mlL9LCxlfyfnftQ4Xl+M2azpfP8AQDpmRlYvHI5ats5VNScS+F/YOzwkQwAFs+ZLyn9vtz7dYek/zzBxYeG9tA7C5ewg9t3s5hzl1EmKsect5fAb9kbJKqokPvE1tTQxDsLl7Dlr7/Bli1YiPEjfFArrpU6p7TJ8IuidFpC3KTqWFIqVHq+wMCg1WmveesdNnXcBABAVFwMVn6y/qlLpqjYaBrm7onGYQyBvgF7c96/ADSUfpfC/+ClXxNUsnRgZ0agb8C2frCRIqL/RPifUdjyzU5sXLFK4fmMMfTt7cA2r/0IhwNPSP24ulr8VVXMLyyEqbGJjP21P69TQnISKptMgfN0GwTvwe6saVUzOS1Nqe9lTcTezcq6xXMZY9ix8TP2MC+P4hJu4bezZ9Crhx0tne/f7rb8/qOHUVRchMDz5yT5UFlVKTkesG8vxg4f2d7knzt4yScHQwMBGzqkof104lxQq+38ps+S+uEOdOkv+f9atOzsGwAY5u7JFr46h0XFRuOLvbvx0/Ej8B7szgCgfx8nyRBIVGy00us/zMsFANhYWcPFsa9SEWlqaODAlzthZ9sdALBlz06EhF4meQPwysjMyaY+PXvh2N797PDubyXh1L6f2Nv+iwEA8Xdu4+LVMF76PYGLTwFWT2bLtHXanLCslB7m5RIAjPYextxdBwIATp0PlnR6NEddTR3ODo4AADNTU0m8nq4um+U7FQBwJzkJsbdvtfjDjb4VDwBY5DdXZpxOESZGxuyngK9hYmQMAHh34zqFfrbEz78dw+uvzpV7bMncBRDoN1SJv/rhuzan/bzSKvHl5OTQokWLaPHixbRhwwby8vKisWPHdson2K+//kqTJ0+m9evX08qVK0lHR4cCAwPb7Gv2k+liU8dOaJPdvsM/Q1RRIfkcsPFTGBka4tbdRPxy8rhCP9TVGsTCIF3qvL9kmUQYn3+9A80H0BtJzXhAUbHRGD9iNPxfeU2m6CoTlSvsVLGz7c6+3xoALU1NVLVjml+JUEh5hQUwEgjkFpmGBgL2+j9fA9BQ+gX9fqFT/naeNa0S35QpU+Dn54fvvvuObdiwgV2+fBlqampYtWpVp8rEwMBA2rt3L86ePcs2btzItm7dyk6fPg1/f38IhUIZX2tqagA0jE01/VHfTkqkS9f+gNfAwfhg+XtSNo2dIJVVVTKdKCdDgilg316YmfzVtutubcN+3vEN+vVxwoYvN+NokPwHQcHjRwCAiiZtJKBh4P7AlzthZ2OLyJg/8XHANmpeMpUIhfT+po/w8pRp2Lnpc3TpIn1by0TllHDvLm7dvaPwfrm7DmTbN3yq6LBUDaC+vp6a/I/Vn29Cmajlub2vvzoHWpqaAIDNX+9ol8ifN5TWTcLCwmjAgAEYO3as5Kmmq6vLNm3aRPPmzcPmzZv/Xg/bwDvvvIOzZ89KxY0fP555e3tTSkoKBg8eDKBhkvRvZ8/Q7+FX/rLdsI56dLPB3ZRkJKXcx8o338KSuQtYY4nUOLE6/EYUgAbB+q94C95DPOhhbg5iE27hfnpDp4iWpvTEaFdnFxZ04BACL5yjkyHBCLp4nhb6zUXf3g6wNDNn1/68Thf/CIO2lhbsmgwXNDKw3wB29qcjtP/IIfx84hhuJyXSzElTYG3ZFTfv3kFZeRnWr/gv3Jz7yZQ8oRHhtGPfXhQ+fozlH63Buv+8R74+Y+WWUC+Nm8iycx5ScvpfnTu1YjGib8ZRaMRfG9gcDvwNIz2HEmMM3x76EcGXLgAAVnz8If1jyjRJm7WZHzDQ10d1UREeZGdh/RebafnCN2Bt2bXTTdZ4Vijdq2HXrl1kYGCABQsWSGVSYmIiTZo0CZmZmezo0aNUXFzcLgcyMzNRX18POzu7dtk3YmhoiFWrViEjI0PmZvr5+dG7774LDw+PTnGjq2tqkFuQTwWPCiUzUYwEhujTqzdrXmo1p3EydW5+PkyMjNDNypq1tn3XWmJu36TB/TvfDKbnDaV3TVtbGw8fyg7Y3r17F46ODZ0EM2fObPeGK/Hx8SQWi596oxTGGBYuXEiVlZXQaTY3MSEhAWZmZk+TfIeipakJOxtbJq+UUwZjDFYWlszKQvb1qY6CC+8Zoey1h7i4ODI3N6esrCypV0PGjBlD58+ff+rXRTrqlSIigqurK73//vtSaYWHh5OXl1eHpM8DDx0ZlJZ8bm5uzMfHh2xtbfH666+Tra0tbty4gSlTpmDChAmd6gm5f/9+jBw5EidOnKC5c+dCJBIhJiYGJ06cULVrHI4Mra4u3r9/n9LS0kBEcHV1hZWVVYcILy4ujsRiMdzdZRvp7aGoqIhSUlJQVFQEgUCAoUOHdqoHBIfTiEo3xwQ6Xnwczv8X+AwXDkdFcPFxOCrihX2r4bGwmB6VFEk+6+vowcLErFVjZnV1dUhMv0+5jwpgZmQMl159mJaGZos29zJSJfX7Ll26wMLYDIb6BnKr2lU11cjIzVbYHrAys4RAT/5q4RVVlXQnLRnFpULYWlqhr11vuSuVyaOg6BHdy0gDgeBs7wAzIxOlhqLKCiosLoKdtfKVwduSB41k5edQ01k/JgIjmBmZtPidmts0YqCrD2tzSxnDyuoqZOY9lPimqaGJrqbmTOfJpHZlpD3MpPScLOhoaqGvfW+YCIxaleEvrPiuJ8QhOSMNvW3tAAAlZaVIyX5Ajt174tUJ0xQOdscmJdDJ0BAYCwTo3rUbkjPScPzSWRrnMQJj3BV37uw5/hPGeQwH0DBF7VxeKMpE5TRr7GQ42fWWsquqrqb7memSz6HRkRju5i6ZLK2voweBnvTLtfVUj7Phl+nazWjYWlrD3NgEt+4n4sjFM+Q3cTr69Oil0DdRZQUdCjmFjNyHsO9mC4GePqITb0JfV5/8Jk6Dga7ibQGCwy/jxp14rPFfRqaGxi3+6NqSB42cDA2Bob4ApoZGICLkPS5EVn4O+QwZCp8h8vO7qU1TrMwsYG0uOz6anZ9Lv5w7BQ8XVwAND7/7memkp6OLOb4zoeh7PSzIox+Dj4OI0MumB0pF5Qi+dhkuPR3p5bFTmKaGRkvZoXyc7+8OHTnO15YQHH6JzvxxUeq6NbU12Pnrfjp3LVSuP7FJt+nzA7uppEx66bzK6irsOf4TnY+8ovB7LN+2XubYnbRkWvXV/6iqprpFX1d99T8SVVa0mEdHLpyhg0HHZJb8Kyh6RJu+C6DU7Ay59mKxGJ8f2E1hMbJL/CWk3iNheanC65ZXiOjDPdsoLDqSjlw4o/QeticPdhzeR0kPUqTsHguLad3uLZSS9UDuNeXZtBSSM9Jo+y/fyZx/+soF2vnrfrnpFBY/pnW7N8vkaz3VI+jq77Tr6AGl1+dtviZoqGtgjMcwpGQ9kDlGIJwKOw+/iTNgqC89e19bUwtzfGfi0o1wVFa3fl8IZ3sHZmFiiuz83Kfqci4sKaL45Dt4dcJ0mWqzubEpmz56Ik6Ghsi1vZ4QRwI9A4wa5CXzdHfp6cgEeoqrhVdio+DVfyCGuQ1ht+7fhaiy7W/rtycPTARGzN3FFU1rB38Hk4eNYWk5mXKPBYdfxqjB3ujZrbtU/jAwTBk+lokqKpCYltzid+Lik4O8KmdWXi5paWiie1druT9GA1095tDdHgmp99r8A2zrEoXNuZWcCFdHZyiq5vTr3Yc9FhajVFQm49vtlCR49nNr8zXFdWJE3orBqEFeUFdTh2c/N4TFRLY5nUbakwd19YptsvNzcS8jlZqG9lyjsTRrTkLqPQwdMFihnUc/N8QnJ7aYNhdfEx4W5FFg2Hl49hsoc6y8ohyGBoIW7Y30BShV8mpNI+I6Mc5FhFJ5RQV62fR4qjHO8koRjPQV+8bAINDTh7C8TI5tBYwFRm2+ZsStGHKyd4Ceji4DgFGDvRF1Oxbiuta/fNzePIhNSqDrCXEY1Le/wnNu3InHuWuhUqGm2Ro7LVFWUU77zxwlN0cXdGHSMhHXiVFXXyf57vIwMhCgrKLlRbha1eESHx9PixcvxqxZs+Dt7Y3s7GysWbMGP/zwA8aPl12BWVWsWbOGIiIisHbtWmhpaWHfvn0oKChAYGAg09aW7bm6cecmUrIeEAAIy8tQViHCSyPHYbBTf5nvZGFihtzCfBBI5oXXRh4W5sHJvrdC/wIOfU9AwxM791EBunfthiWz5kCt2SrXbcXcyBRJDxRvBlMrrkVxqRAWxqYyjpsZmSArPwf21q2f5E0ghEVHwmfIUKkeTFNDY1y7GU3yqrCNtCcPTlw+Bx0tbSIQCooeQ09bB34Tp8PKzELhdWaN8W2xk6k5OY8KJL5V19Yg91EBvPsPwkwf2YWh1dXUoa+jh/zHhWRpaq6oMwaWJqbyDv2VjjKnamtr8dJLL+Hnn3/GqFGjJBcyMzOjRYsWISMjQ+kXexZs3bqVoqOjceXKFYmPo0ePhre3N4WEhNCMGTNkMsnDxRVTR4xr1Q0yMzJhxgIjirgZTcNcZWfjJGemUWHxYzjZOyhM753XFkmOXY27QTeTE6Ho5rUFtz4uCLxyATmF+SSvK/3i9avk0N1e5j1DAHB3HoDjl87Cs99AKBsuaSQu6Q7pautAWF4KYXmpJN6+W3eExURi5MC/VjBrTnvyoKmQsgty6dsTh9Db1q5DH/rWZhZSvv1w+ggZC4ygqSBPBjv1w9lrofCf9orMsbIKEUXeisHSl+e3eM1WbxHWVHhAwxZhmZmZBDTsWNTedktpaSnEYjGKi4v/li3CfH19O2yLML+J0/HVrz+gSxc18u4/SJIf9zPTaf/po5g3eZbc9qI8Rgz0YHdS79GV2KgWS4rWoKutw2b4TKKvj/2IJbPnkK1lQ7v0SQlFETdjsHL+m3JtnXs6sp5JCbT76AFaPPM1ybDC/cx0CrxyAbPG+Mp0Kvx+/Sr+MX4q7K1tZfzOe1RAsUkJJK/20Jz25IGNhRUbNciTfjl3khbN8Pvbal1+E6ezLQf3kHNPB7KxkJ3H7DvUh237+Vs6ejGIZo/xZY0ld3GZkPYc+xHeAwajm0XLLworFV9ZWRm6desmE1/RZAmFqKgolJaWypzTGtLT01FXV4f2vozbiFAolOtneXl5h73LZ21uyd6ft4ROhZ3HlZhI0tbUgriuDupqanhz9lz0sGrbFtTzpszG5we+hrO9A5nLqRK2Be/+g5ixgYCOXDgDxhipdemCiuoqdDPviv8uWKpwUB4A5k6exUKjIyng0D4Y6OpRUakQAGH04KGw7yYtsOTMNFJTU5MrPADwcR+KU6HnMdhJcXusKe3Jg7Eew1nAoe/pekIcefYbKNemsaraNE6gb4DXp/2zVdfQ0dLGvCmzceD0Uaz2XyZZY6cRTQ1NvDf3DXbmykX6/MBuatzfQ1RVifGeI+Dh4qb8OsrGIu7evUs+Pj4yYxZhYWGdaoswgUBAV67IjrONHj1a4RZhPPCgyqC0jmRnZ8fi4uKwdOlSyRZhjx8/pjfffBNr165tzUPkmbB8+XLMnz8f58+flzztdu3aRTU1NQq3CONwVEmrlpGIjIzEnDlzoK+vDy8vL8rPz8emTZvg6+vbaX7UH3/8MVNXV6cZM2bAyMiIrKysYGpqijNnzqjaNQ5HLm16n6+0tJTq6+uhp6fHNJTNW2slHf0+X01NDSoqKkhNTQ0GBi1P2uVwVEmbJlYLFCyK2pnQ1NSEpqZmp/eTw+EzXDgcFcHFx+GoCC4+DkdFcPFxOCqCi4/DURFcfByOiuDi43BUhMoWUKqqqsJ7771HOTk5yM/PR3Z2Nn3yySeYP38+H6PjvBCoRHwlJSXk4eGBrVu3Yvr06QwAMjMzycfHB9ra2vTKK69wAXKee1SyXPy///1v0tXVxbZt26REtmPHDoqIiMCRI0e4+DjPPSpp8wUHB2P27Nky8TY2NhAKhSrwiMN59qhEfBoaGqiqkl1iLyUlBfb29irwiMN59qhEfOPGjcP27dtRW/vXalJVVVU4ePAg/Pz8VOESh/PMUUmbLycnhyZMmIDKykq89dZb6NevH7Zs2YIhQ4bgs88+4+09zguByvbnE4lEtGPHDly4cAF9+vTBggUL+EaWnBcKlW+OyeG8qPAZLhyOiuDi43BUBBcfh6MiuPg4HBXBxcfhqAguPg5HRfwfPjFYbBTuVekAAAAASUVORK5CYII=" alt="Begonia Portocarrero" class="logo" /></a>
-  <a href="./index.html" class="nav-back">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
-    Volver a la página principal
-  </a>
+  <a href="#inicio" class="nav-logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN8AAABYCAYAAAB1TCJMAAAZzUlEQVR4nO2dd1hUx/rHvyO9LR0EQUEFBVSw0OzYUWPNzQ2xXaLGeE2uiYnXlkSNyU0siRg1xiRGTdFYoqKgqFEwIqChqYiIFClSFVhgqQvv7w9kw7K7LCBx+el8nmce2DnnnfPunP2eqWeGERE4HM6zp4uqHeBwXlS4+DgcFcHFx+GoCC4+DkdFcPFxOCqCi4/DURFcfByOilCZ+IKCgsjLy4tOnjxJYWFhNG7cOJo4cSIfdOS8MDBVDLKnpKTQ5MmTER8fD11dXdYY7+vrS6NGjcLq1atZS/YczvOASkq+zZs3Y8WKFVLCAwB/f39ERESowiUO55mjEvHdvn0bbm5uMvFisRh8uhvnRUEl4uvevTvi4+Nl4qOiojBkyJBn7xCHowLUVXHRuXPnwt/fH15eXuTm5sYAIDs7m8LCwnD16lVVuMThPHNUIr5p06YxPz8/GjhwIEaNGkVGRkbIz8/H8ePHYWhoyDtbOC8EKuntbCQnJ4dSUlKgq6uLIUOGcNFxXihUOshubW3NDAwMeCcL54WEz3DhcFQEFx+HoyK4+DgcFcHFx+GoCC4+DkdFcPFxOCqCi4/DURFcfByOimj19LK6ujqUlJRQWVkZAMDMzAz6+vqdblaKSCSi4uJiiMViqKurw8bGptP5yOEArSz5rl69SiNGjKDk5GTY2dmxrKwsuLi4ICgoqFNNTZk1axZt3rwZNjY2zM7Ojq1duxYTJkygqqoqVbvG4chCRC2Gmpoa2NjYUFRUFDWNP3fuHNnY2JAye2UhNjaWbty48dTpbNmyhaZOnSqTTuNSFU+bPg88dHRQWu1MSUmhkSNHwtPTU6r6NmnSJJadnU0AUFxcTGKxuF3ib6wiFhYWPlUp+umnn+LGjRsy8VOnTkVqaurTJM3h/C0oFZ9IJIKlpaVMfGlpqUQs8fHxKC8vb5cDqampqK+vR3V1dbvsGxEKhXL9LCoqQq9evaTiasVinLkYQuevhKL0SRu2q4UFDA0EiE24hV497DBv1isY1H+A5IFTVV2NuIRbdOjUb3hUVAQAMDIUwLFnb+Tm5yErJwcAMG38RPjNmC23nXknOYlCI8JhbmoGR/ueEFVWIDQiHMeDz0BTUxPjho/E+nf/y7S1tOR+x4yH2XT28kVUVVfDSGCI+Du3cT89Db162OHVaTMxzF36AVlfX48T54Lo/JXLKBdVAAB69uiBT1auZYzJuhj0+wUKvHAW5aIK2Hfvjrkz/wGHnr1Y9M04OhZ8Grn5+QAAX5+x8B7sDgf7ngrb03kF+fT2h6txbO9+3uZWhLKiMTU1lRwdHal5/LFjx2j48OEy8W0NHVXttLOzo4MHD8qk4+zsTOHh4XLT3xSwjWzc+5ONe3+qrKoEESEx+R718HKj3sPdKf5Ogoxdo42d10CqrKqSxCcm36MpC16lT3dul7EpePSI3v5wNfUePoSCL12QOV5UUkyvLF1INu796WbiHZnjYrEY277ZReP8ZtHtpESp43mFBTTvP0vJxr0/vffxh9S4FEfTcPd+MnlPnyT5rlv27FSY339cjyTv6ZOoprZWKn77999I7IuFQqX36+OArWTj3p/+uB751Pf2eQ1KO1xsbW1ZQUEBXn75ZRKJRAQA6enptH79eqxbt+7vfzq0ksWLF2PZsmUICQmRlMhffPEFmZiYYNiwYXKfvvr6+gAAdTV1aGtpAwCcHBzZACcXVFVX4WRIsIyNjra25G/TEsrJwZHt/2IX1NXUpM4X14mxdO37OBkSjL2ff4nJY8bL+GJsaMQObt/Nhrl7ouBRocw112z+hAL27cWe/21Dvz5OUvaWZuZs3xdfseHuXjhy5hT+ve6/VF9fL2Xft7cDc3V2QVdzCwDAVz98i+PBp+VW8wc4OaN/X2doqEtXinS1dST/a2tptVialYtE9MvJ4wCAgO+/aenUFxql4tPQ0EBkZCTS09Ohr68PExMTWrp0KQ4dOoRJkyZ1mirF2rVr2cqVKzFz5kwwxsjR0ZEqKytx9erVNvuop6MLoGF4pS2Ym5qyRX5zpeJ27v+ersfF4LUZL2PMsBEKfdHW0kLAhk9RJCyRiv/t7Bk6fOo3TBo9Br3t7OXaa6irY/Wy5QCAs5cvYs9P+2WEpdZFDT/t2AMDvYYHzurPPkZUbLTMeXq6ukxXR6d5dJs4dOo3DBviCQC4ER+LP65Hdqpe8c5Cq4Ya+vbty2JiYhgRsaKiIhYSEsJcXV07jfAa+eijj1hlZSUjIpacnMw++OCDNvtYXVODlAdp0NPVxWszZrfJtqS0lEyMjFnTz9/+chBAQ1tQGV3NLdhL4yZI7MV1YknJ0a+PU4u2rs4ubICTMwDgwNHDch8cfXs7sG+3fAk1NTVU19Rg8ap3kZ6Z0aHCENeJkXDvLrZ9uFEi9K17dnbkJZ4b+AyXJhARPtz2GWlraeHwrm/h5ODYavHWisX48fivUnFBv59HuUgEAOjZw65V6eg0qd4lpdynB9lZAADLJ1XGlhg62AMAkFdYgIR7SVKiImr4ONzdi3226gMAQIlQiAUr3kJJk86zpyXo9ws0bfwkGBsasYWvzgEAxCcmIDQynJd+zeDiA1BXX4eAfXvpXyveopPnguDhNghlT0SjiJraGgTs20sB+/bS2x+uJs+XxtO91BSpczKeCAcAjNuxMFRTe8GT9mlL9LCxlfyfnftQ4Xl+M2azpfP8AQDpmRlYvHI5ats5VNScS+F/YOzwkQwAFs+ZLyn9vtz7dYek/zzBxYeG9tA7C5ewg9t3s5hzl1EmKsect5fAb9kbJKqokPvE1tTQxDsLl7Dlr7/Bli1YiPEjfFArrpU6p7TJ8IuidFpC3KTqWFIqVHq+wMCg1WmveesdNnXcBABAVFwMVn6y/qlLpqjYaBrm7onGYQyBvgF7c96/ADSUfpfC/+ClXxNUsnRgZ0agb8C2frCRIqL/RPifUdjyzU5sXLFK4fmMMfTt7cA2r/0IhwNPSP24ulr8VVXMLyyEqbGJjP21P69TQnISKptMgfN0GwTvwe6saVUzOS1Nqe9lTcTezcq6xXMZY9ix8TP2MC+P4hJu4bezZ9Crhx0tne/f7rb8/qOHUVRchMDz5yT5UFlVKTkesG8vxg4f2d7knzt4yScHQwMBGzqkof104lxQq+38ps+S+uEOdOkv+f9atOzsGwAY5u7JFr46h0XFRuOLvbvx0/Ej8B7szgCgfx8nyRBIVGy00us/zMsFANhYWcPFsa9SEWlqaODAlzthZ9sdALBlz06EhF4meQPwysjMyaY+PXvh2N797PDubyXh1L6f2Nv+iwEA8Xdu4+LVMF76PYGLTwFWT2bLtHXanLCslB7m5RIAjPYextxdBwIATp0PlnR6NEddTR3ODo4AADNTU0m8nq4um+U7FQBwJzkJsbdvtfjDjb4VDwBY5DdXZpxOESZGxuyngK9hYmQMAHh34zqFfrbEz78dw+uvzpV7bMncBRDoN1SJv/rhuzan/bzSKvHl5OTQokWLaPHixbRhwwby8vKisWPHdson2K+//kqTJ0+m9evX08qVK0lHR4cCAwPb7Gv2k+liU8dOaJPdvsM/Q1RRIfkcsPFTGBka4tbdRPxy8rhCP9TVGsTCIF3qvL9kmUQYn3+9A80H0BtJzXhAUbHRGD9iNPxfeU2m6CoTlSvsVLGz7c6+3xoALU1NVLVjml+JUEh5hQUwEgjkFpmGBgL2+j9fA9BQ+gX9fqFT/naeNa0S35QpU+Dn54fvvvuObdiwgV2+fBlqampYtWpVp8rEwMBA2rt3L86ePcs2btzItm7dyk6fPg1/f38IhUIZX2tqagA0jE01/VHfTkqkS9f+gNfAwfhg+XtSNo2dIJVVVTKdKCdDgilg316YmfzVtutubcN+3vEN+vVxwoYvN+NokPwHQcHjRwCAiiZtJKBh4P7AlzthZ2OLyJg/8XHANmpeMpUIhfT+po/w8pRp2Lnpc3TpIn1by0TllHDvLm7dvaPwfrm7DmTbN3yq6LBUDaC+vp6a/I/Vn29Cmajlub2vvzoHWpqaAIDNX+9ol8ifN5TWTcLCwmjAgAEYO3as5Kmmq6vLNm3aRPPmzcPmzZv/Xg/bwDvvvIOzZ89KxY0fP555e3tTSkoKBg8eDKBhkvRvZ8/Q7+FX/rLdsI56dLPB3ZRkJKXcx8o338KSuQtYY4nUOLE6/EYUgAbB+q94C95DPOhhbg5iE27hfnpDp4iWpvTEaFdnFxZ04BACL5yjkyHBCLp4nhb6zUXf3g6wNDNn1/68Thf/CIO2lhbsmgwXNDKw3wB29qcjtP/IIfx84hhuJyXSzElTYG3ZFTfv3kFZeRnWr/gv3Jz7yZQ8oRHhtGPfXhQ+fozlH63Buv+8R74+Y+WWUC+Nm8iycx5ScvpfnTu1YjGib8ZRaMRfG9gcDvwNIz2HEmMM3x76EcGXLgAAVnz8If1jyjRJm7WZHzDQ10d1UREeZGdh/RebafnCN2Bt2bXTTdZ4Vijdq2HXrl1kYGCABQsWSGVSYmIiTZo0CZmZmezo0aNUXFzcLgcyMzNRX18POzu7dtk3YmhoiFWrViEjI0PmZvr5+dG7774LDw+PTnGjq2tqkFuQTwWPCiUzUYwEhujTqzdrXmo1p3EydW5+PkyMjNDNypq1tn3XWmJu36TB/TvfDKbnDaV3TVtbGw8fyg7Y3r17F46ODZ0EM2fObPeGK/Hx8SQWi596oxTGGBYuXEiVlZXQaTY3MSEhAWZmZk+TfIeipakJOxtbJq+UUwZjDFYWlszKQvb1qY6CC+8Zoey1h7i4ODI3N6esrCypV0PGjBlD58+ff+rXRTrqlSIigqurK73//vtSaYWHh5OXl1eHpM8DDx0ZlJZ8bm5uzMfHh2xtbfH666+Tra0tbty4gSlTpmDChAmd6gm5f/9+jBw5EidOnKC5c+dCJBIhJiYGJ06cULVrHI4Mra4u3r9/n9LS0kBEcHV1hZWVVYcILy4ujsRiMdzdZRvp7aGoqIhSUlJQVFQEgUCAoUOHdqoHBIfTiEo3xwQ6Xnwczv8X+AwXDkdFcPFxOCrihX2r4bGwmB6VFEk+6+vowcLErFVjZnV1dUhMv0+5jwpgZmQMl159mJaGZos29zJSJfX7Ll26wMLYDIb6BnKr2lU11cjIzVbYHrAys4RAT/5q4RVVlXQnLRnFpULYWlqhr11vuSuVyaOg6BHdy0gDgeBs7wAzIxOlhqLKCiosLoKdtfKVwduSB41k5edQ01k/JgIjmBmZtPidmts0YqCrD2tzSxnDyuoqZOY9lPimqaGJrqbmTOfJpHZlpD3MpPScLOhoaqGvfW+YCIxaleEvrPiuJ8QhOSMNvW3tAAAlZaVIyX5Ajt174tUJ0xQOdscmJdDJ0BAYCwTo3rUbkjPScPzSWRrnMQJj3BV37uw5/hPGeQwH0DBF7VxeKMpE5TRr7GQ42fWWsquqrqb7memSz6HRkRju5i6ZLK2voweBnvTLtfVUj7Phl+nazWjYWlrD3NgEt+4n4sjFM+Q3cTr69Oil0DdRZQUdCjmFjNyHsO9mC4GePqITb0JfV5/8Jk6Dga7ibQGCwy/jxp14rPFfRqaGxi3+6NqSB42cDA2Bob4ApoZGICLkPS5EVn4O+QwZCp8h8vO7qU1TrMwsYG0uOz6anZ9Lv5w7BQ8XVwAND7/7memkp6OLOb4zoeh7PSzIox+Dj4OI0MumB0pF5Qi+dhkuPR3p5bFTmKaGRkvZoXyc7+8OHTnO15YQHH6JzvxxUeq6NbU12Pnrfjp3LVSuP7FJt+nzA7uppEx66bzK6irsOf4TnY+8ovB7LN+2XubYnbRkWvXV/6iqprpFX1d99T8SVVa0mEdHLpyhg0HHZJb8Kyh6RJu+C6DU7Ay59mKxGJ8f2E1hMbJL/CWk3iNheanC65ZXiOjDPdsoLDqSjlw4o/QeticPdhzeR0kPUqTsHguLad3uLZSS9UDuNeXZtBSSM9Jo+y/fyZx/+soF2vnrfrnpFBY/pnW7N8vkaz3VI+jq77Tr6AGl1+dtviZoqGtgjMcwpGQ9kDlGIJwKOw+/iTNgqC89e19bUwtzfGfi0o1wVFa3fl8IZ3sHZmFiiuz83Kfqci4sKaL45Dt4dcJ0mWqzubEpmz56Ik6Ghsi1vZ4QRwI9A4wa5CXzdHfp6cgEeoqrhVdio+DVfyCGuQ1ht+7fhaiy7W/rtycPTARGzN3FFU1rB38Hk4eNYWk5mXKPBYdfxqjB3ujZrbtU/jAwTBk+lokqKpCYltzid+Lik4O8KmdWXi5paWiie1druT9GA1095tDdHgmp99r8A2zrEoXNuZWcCFdHZyiq5vTr3Yc9FhajVFQm49vtlCR49nNr8zXFdWJE3orBqEFeUFdTh2c/N4TFRLY5nUbakwd19YptsvNzcS8jlZqG9lyjsTRrTkLqPQwdMFihnUc/N8QnJ7aYNhdfEx4W5FFg2Hl49hsoc6y8ohyGBoIW7Y30BShV8mpNI+I6Mc5FhFJ5RQV62fR4qjHO8koRjPQV+8bAINDTh7C8TI5tBYwFRm2+ZsStGHKyd4Ceji4DgFGDvRF1Oxbiuta/fNzePIhNSqDrCXEY1Le/wnNu3InHuWuhUqGm2Ro7LVFWUU77zxwlN0cXdGHSMhHXiVFXXyf57vIwMhCgrKLlRbha1eESHx9PixcvxqxZs+Dt7Y3s7GysWbMGP/zwA8aPl12BWVWsWbOGIiIisHbtWmhpaWHfvn0oKChAYGAg09aW7bm6cecmUrIeEAAIy8tQViHCSyPHYbBTf5nvZGFihtzCfBBI5oXXRh4W5sHJvrdC/wIOfU9AwxM791EBunfthiWz5kCt2SrXbcXcyBRJDxRvBlMrrkVxqRAWxqYyjpsZmSArPwf21q2f5E0ghEVHwmfIUKkeTFNDY1y7GU3yqrCNtCcPTlw+Bx0tbSIQCooeQ09bB34Tp8PKzELhdWaN8W2xk6k5OY8KJL5V19Yg91EBvPsPwkwf2YWh1dXUoa+jh/zHhWRpaq6oMwaWJqbyDv2VjjKnamtr8dJLL+Hnn3/GqFGjJBcyMzOjRYsWISMjQ+kXexZs3bqVoqOjceXKFYmPo0ePhre3N4WEhNCMGTNkMsnDxRVTR4xr1Q0yMzJhxgIjirgZTcNcZWfjJGemUWHxYzjZOyhM753XFkmOXY27QTeTE6Ho5rUFtz4uCLxyATmF+SSvK/3i9avk0N1e5j1DAHB3HoDjl87Cs99AKBsuaSQu6Q7pautAWF4KYXmpJN6+W3eExURi5MC/VjBrTnvyoKmQsgty6dsTh9Db1q5DH/rWZhZSvv1w+ggZC4ygqSBPBjv1w9lrofCf9orMsbIKEUXeisHSl+e3eM1WbxHWVHhAwxZhmZmZBDTsWNTedktpaSnEYjGKi4v/li3CfH19O2yLML+J0/HVrz+gSxc18u4/SJIf9zPTaf/po5g3eZbc9qI8Rgz0YHdS79GV2KgWS4rWoKutw2b4TKKvj/2IJbPnkK1lQ7v0SQlFETdjsHL+m3JtnXs6sp5JCbT76AFaPPM1ybDC/cx0CrxyAbPG+Mp0Kvx+/Sr+MX4q7K1tZfzOe1RAsUkJJK/20Jz25IGNhRUbNciTfjl3khbN8Pvbal1+E6ezLQf3kHNPB7KxkJ3H7DvUh237+Vs6ejGIZo/xZY0ld3GZkPYc+xHeAwajm0XLLworFV9ZWRm6desmE1/RZAmFqKgolJaWypzTGtLT01FXV4f2vozbiFAolOtneXl5h73LZ21uyd6ft4ROhZ3HlZhI0tbUgriuDupqanhz9lz0sGrbFtTzpszG5we+hrO9A5nLqRK2Be/+g5ixgYCOXDgDxhipdemCiuoqdDPviv8uWKpwUB4A5k6exUKjIyng0D4Y6OpRUakQAGH04KGw7yYtsOTMNFJTU5MrPADwcR+KU6HnMdhJcXusKe3Jg7Eew1nAoe/pekIcefYbKNemsaraNE6gb4DXp/2zVdfQ0dLGvCmzceD0Uaz2XyZZY6cRTQ1NvDf3DXbmykX6/MBuatzfQ1RVifGeI+Dh4qb8OsrGIu7evUs+Pj4yYxZhYWGdaoswgUBAV67IjrONHj1a4RZhPPCgyqC0jmRnZ8fi4uKwdOlSyRZhjx8/pjfffBNr165tzUPkmbB8+XLMnz8f58+flzztdu3aRTU1NQq3CONwVEmrlpGIjIzEnDlzoK+vDy8vL8rPz8emTZvg6+vbaX7UH3/8MVNXV6cZM2bAyMiIrKysYGpqijNnzqjaNQ5HLm16n6+0tJTq6+uhp6fHNJTNW2slHf0+X01NDSoqKkhNTQ0GBi1P2uVwVEmbJlYLFCyK2pnQ1NSEpqZmp/eTw+EzXDgcFcHFx+GoCC4+DkdFcPFxOCqCi4/DURFcfByOiuDi43BUhMoWUKqqqsJ7771HOTk5yM/PR3Z2Nn3yySeYP38+H6PjvBCoRHwlJSXk4eGBrVu3Yvr06QwAMjMzycfHB9ra2vTKK69wAXKee1SyXPy///1v0tXVxbZt26REtmPHDoqIiMCRI0e4+DjPPSpp8wUHB2P27Nky8TY2NhAKhSrwiMN59qhEfBoaGqiqkl1iLyUlBfb29irwiMN59qhEfOPGjcP27dtRW/vXalJVVVU4ePAg/Pz8VOESh/PMUUmbLycnhyZMmIDKykq89dZb6NevH7Zs2YIhQ4bgs88+4+09zguByvbnE4lEtGPHDly4cAF9+vTBggUL+EaWnBcKlW+OyeG8qPAZLhyOiuDi43BUBBcfh6MiuPg4HBXBxcfhqAguPg5HRfwfPjFYbBTuVekAAAAASUVORK5CYII=" alt="Begonia Portocarrero" class="logo" /></a>
+  <ul class="nav-links">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#historia">Mi historia</a></li>
+    <li><a href="#recurso">Recurso gratuito</a></li>
+    <li><a href="#arbol">Árbol interactivo</a></li>
+    <li><a href="#sesiones">Sesiones</a></li>
+    <li><a href="#acompanamiento">El proceso</a></li>
+    <li><a href="https://wa.me/17868480827?text=Hola%20Begonia%2C%20quisiera%20conocer%20m%C3%A1s%20sobre%20las%20sesiones%201%3A1." target="_blank" rel="noopener noreferrer" class="nav-wa">Contacto</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#historia">Mi historia</a></li>
+    <li><a href="#recurso">Recurso gratuito</a></li>
+    <li><a href="#arbol">Árbol interactivo</a></li>
+    <li><a href="#sesiones">Sesiones</a></li>
+    <li><a href="#acompanamiento">El proceso</a></li>
+    <li><a href="https://wa.me/17868480827?text=Hola%20Begonia%2C%20quisiera%20conocer%20m%C3%A1s%20sobre%20las%20sesiones%201%3A1." target="_blank" rel="noopener noreferrer" class="mobile-wa">Contacto</a></li>
+  </ul>
+</div>
 
+<!-- HERO -->
 <main id="contenido">
-
-  <!-- HEADER -->
-  <header class="article-head">
-    <div class="read">
-      <div class="eyebrow reveal">Recurso de lectura</div>
-      <h1 class="reveal">Salmo 145</h1>
-      <p class="article-subtitle reveal">Ashrei <span class="heb" lang="he" dir="rtl">אַשְׁרֵי</span></p>
-      <p class="subtitle-gloss reveal">Ashrei significa «Bienaventurado» o «Dichoso», y es el nombre tradicional con el que se conoce al Salmo 145 dentro de la tradición judía.</p>
-    </div>
-  </header>
-
-  <!-- INTRODUCCIÓN -->
-  <section class="section tight">
-    <div class="read prose reveal">
-      <p class="lede">El Salmo 145 es un canto de alabanza y confianza. Con palabras sencillas, recuerda que la vida sostiene, que hay una presencia cercana a quien la busca de corazón, y que cada ser recibe aquello que necesita.</p>
-      <p>No hace falta ninguna preparación especial para leerlo. Basta con acercarse con calma y dejar que las palabras acompañen el momento que estás viviendo.</p>
-    </div>
-  </section>
-
-  <!-- EL SALMO -->
-  <section class="section">
-    <div class="read reveal">
-      <div style="text-align:center; margin-bottom:8px;">
-        <div class="eyebrow">Para conectar, abrirte al sustento y recordar que no estás sola</div>
-        <h2>El Salmo</h2>
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-text reveal">
+        <div class="hero-eyebrow">Acompañamiento 1:1 · Online</div>
+        <h1>Comprende tu mapa interior y encuentra <em>claridad emocional</em>.</h1>
+        <p class="hero-sub">Trabajamos con el Árbol de la Vida desde la Kábala práctica para comprender lo que estás viviendo, reconocer patrones y mirar con mayor claridad tus emociones y decisiones.</p>
+        <div class="hero-cta-row">
+          <a href="https://wa.me/17868480827?text=Hola%20Begonia%2C%20quisiera%20conocer%20m%C3%A1s%20sobre%20las%20sesiones%201%3A1." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg class="wa-ico" viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.8.9.9-2.8-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.6 6.6 0 01-1.9-1.2 7.3 7.3 0 01-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4a.5.5 0 000-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a.9.9 0 00-.6.3 2.7 2.7 0 00-.8 2 4.7 4.7 0 001 2.5 10.7 10.7 0 004.1 3.6c1.5.6 1.8.5 2.1.5a2.4 2.4 0 001.6-1.1 2 2 0 00.1-1.1c0-.1-.2-.2-.4-.3z"/></svg>
+            Reservar mi sesión
+          </a>
+        </div>
+        <p class="hero-note">Escríbeme por WhatsApp y conversamos si este espacio es para ti.</p>
+      </div>
+      <div class="portrait reveal">
+        <picture>
+          <source srcset="./begonia-hero.webp" type="image/webp">
+          <img src="./begonia-hero.jpg" alt="Retrato de Begonia Portocarrero" class="portrait-img" width="1200" height="1496" loading="eager" fetchpriority="high" decoding="async">
+        </picture>
       </div>
     </div>
-    <div class="read">
-      <div class="psalm">
+  </div>
+</header>
 
-        <article class="verse reveal">
-          <div class="verse-ref">Salmo 145:1</div>
-          <p class="verse-heb" lang="he" dir="rtl">אֲרוֹמִמְךָ אֱלוֹהַי הַמֶּלֶךְ; וַאֲבָרְכָה שִׁמְךָ לְעוֹלָם וָעֶד</p>
-          <span class="verse-rtl-note">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-            Se lee de derecha a izquierda
-          </span>
-          <p class="verse-es">Te exaltaré, mi Dios y Rey, y bendeciré tu nombre por siempre y para siempre.</p>
-        </article>
-
-        <article class="verse reveal">
-          <div class="verse-ref">Salmo 145:16</div>
-          <p class="verse-heb" lang="he" dir="rtl">פּוֹתֵחַ אֶת־יָדֶךָ; וּמַשְׂבִּיעַ לְכָל־חַי רָצוֹן</p>
-          <p class="verse-es">Abres Tu mano y sacias el deseo de todo ser viviente.</p>
-        </article>
-
-        <article class="verse reveal">
-          <div class="verse-ref">Salmo 145:18</div>
-          <p class="verse-heb" lang="he" dir="rtl">קָרוֹב יְהוָה, לְכָל־קֹרְאָיו; לְכֹל אֲשֶׁר יִקְרָאֻהוּ בֶאֱמֶת</p>
-          <p class="verse-es">Cercano está el Señor a todos los que lo invocan, a todos los que lo invocan de verdad.</p>
-        </article>
-
+<!-- INTERACTIVE TREE -->
+<section class="section tree-section" id="arbol">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="section-label">El mapa interior</span>
+      <h2 class="section-title">Diez preguntas para mirar dentro</h2>
+      <p class="section-intro">El Árbol de la Vida es una herramienta de autoconocimiento. Cada sefirá abre una pregunta para reconocer dónde estás hoy. Elige una y empieza a explorar.</p>
+    </div>
+    <div class="tree-layout">
+      <div class="tree-interactive-wrap reveal">
+        <svg class="tree-interactive" viewBox="0 0 360 560" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Árbol de la Vida interactivo">
+          <defs>
+            <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="var(--gold-line)" stop-opacity="0.85"/>
+              <stop offset="60%" stop-color="var(--purple-light)" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="var(--purple-light)" stop-opacity="0.1"/>
+            </radialGradient>
+          </defs>
+          <g id="treePaths" stroke="var(--sage)" stroke-width="1.2" opacity="0.7" fill="none"></g>
+          <g id="sefirotGroup"></g>
+        </svg>
+      </div>
+      <div class="sefira-panel reveal" id="sefiraPanel" aria-live="polite">
+        <div class="panel-empty" id="panelEmpty">
+          <svg class="panel-empty-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold-line)" stroke-width="1.3"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+          <p>Elige una sefirá para comenzar a explorar tu mapa interior.</p>
+        </div>
+        <div class="panel-content" id="panelContent">
+          <div class="panel-heb" id="panelHeb"></div>
+          <div class="panel-translit" id="panelTranslit"></div>
+          <div class="panel-name" id="panelName"></div>
+          <div class="panel-divider"></div>
+          <div class="panel-q-label">Pregunta de integración</div>
+          <div class="panel-q" id="panelQ"></div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CÓMO LEER -->
-  <section class="section tight">
-    <div class="read reveal">
-      <h2>¿Cómo leer este Salmo?</h2>
-      <p class="prose" style="margin-bottom:0;">No hay una forma correcta de leerlo. Si te ayuda, puedes tener presente esto:</p>
-      <ul class="guide">
+<!-- FOR WHOM -->
+<section class="section" id="paraquien">
+  <div class="wrap">
+    <div class="reveal">
+      <h2 class="section-title">¿Para quién es este acompañamiento?</h2>
+    </div>
+    <div class="resonate-wrap reveal">
+      <p class="resonate-lead">Quizás te identifiques con alguna de estas situaciones:</p>
+      <ul class="resonate-list cards">
         <li>
-          <svg class="g-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
-          <p>Busca un momento de calma.</p>
+          <svg class="r-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+          <p>Deseas comprender con mayor profundidad lo que estás viviendo.</p>
         </li>
         <li>
-          <svg class="g-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
-          <p>Léelo con atención y sin prisa.</p>
+          <svg class="r-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+          <p>Percibes que ciertos patrones se repiten y quieres observarlos desde otra perspectiva.</p>
         </li>
         <li>
-          <svg class="g-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
-          <p>Mantén una intención clara durante la lectura.</p>
+          <svg class="r-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+          <p>Buscas conocerte mejor y comprender la relación entre tus emociones, pensamientos y decisiones.</p>
         </li>
         <li>
-          <svg class="g-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
-          <p>Detente unos instantes en las frases que tengan mayor significado para ti.</p>
+          <svg class="r-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+          <p>Sientes que necesitas detenerte, ordenar lo que estás viviendo y encontrar mayor claridad.</p>
         </li>
         <li>
-          <svg class="g-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
-          <p>Utilízalo como apoyo para cultivar confianza, gratitud, sustento y apertura para recibir.</p>
+          <svg class="r-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+          <p>Valoras un acompañamiento respetuoso, sin juicios y adaptado a tu propio ritmo.</p>
         </li>
       </ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- DESCARGA (opcional) -->
-  <section class="section tight">
-    <div class="read reveal">
-      <div class="download-row">
-        <a href="./salmo-145.pdf" class="btn btn-secondary" download="salmo-145.pdf">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
-          Descargar PDF
+<!-- SESSIONS -->
+<section class="section sessions-section" id="sesiones">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="section-label">Cómo funcionan las sesiones</span>
+      <h2 class="section-title">Sesiones 1:1 para acompañarte en tu proceso</h2>
+      <p class="section-intro">Las sesiones son online y completamente personalizadas. Puedes elegir una sesión individual para trabajar un tema puntual, o un recorrido de cuatro sesiones 1:1 para profundizar paso a paso en tu proceso interior.</p>
+    </div>
+    <div class="sessions-intro-grid">
+      <div class="session-mode reveal">
+        <span class="tag">Opción 1</span>
+        <h3>Sesión individual 1:1</h3>
+        <p>Un encuentro personalizado para mirar con calma lo que estás viviendo ahora, encontrar claridad y reconocer cuál puede ser tu siguiente paso.</p>
+      </div>
+      <div class="session-mode reveal">
+        <span class="tag">Opción 2</span>
+        <h3>Recorrido de 4 sesiones 1:1</h3>
+        <p>Un proceso más profundo y acompañado para comprender patrones, mirar tu proceso desde el Árbol de la Vida e integrar herramientas prácticas en tu vida diaria.</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="journey-label">El recorrido de cuatro sesiones</div>
+      <div class="journey">
+        <div class="journey-step"><div class="num">1</div><h4>Claridad</h4><p>Miramos con calma lo que estás viviendo ahora y qué necesitas ordenar internamente.</p></div>
+        <div class="journey-step"><div class="num">2</div><h4>Patrones</h4><p>Identificamos emociones, bloqueos o formas de reaccionar que se están repitiendo.</p></div>
+        <div class="journey-step"><div class="num">3</div><h4>El Árbol</h4><p>Leemos tu proceso desde el Árbol de la Vida para comprender qué área necesita equilibrio.</p></div>
+        <div class="journey-step"><div class="num">4</div><h4>Integración</h4><p>Cerramos con herramientas prácticas y próximos pasos para aplicar en tu vida diaria.</p></div>
+      </div>
+      <p class="journey-note">Puedes comenzar con una sola sesión o elegir un recorrido de 4 sesiones 1:1 para profundizar paso a paso.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ACOMPAÑAMIENTO -->
+<section class="section" id="acompanamiento">
+  <div class="wrap">
+    <div class="reveal story-head">
+      <span class="section-label">El proceso</span>
+      <h2 class="section-title">¿Cómo es el acompañamiento?</h2>
+      <p class="section-intro">Si deseas conocer cómo se desarrolla el proceso de acompañamiento, puedes verlo aquí.</p>
+    </div>
+    <div class="accomp-reveal reveal">
+      <div class="accomp-toggle-wrap">
+        <button class="accomp-toggle" id="accompToggle" aria-expanded="false" aria-controls="accompPanel">
+          <span class="accomp-toggle-label">Conocer cómo será nuestro encuentro</span>
+          <svg class="accomp-toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+      </div>
+      <div class="accomp-panel" id="accompPanel">
+        <div class="accomp-panel-inner">
+
+          <div class="accomp-item">
+            <h3>
+              <button class="accomp-item-btn" id="accompBtn1" aria-expanded="false" aria-controls="accompBody1">
+                <span class="accomp-item-title">Primer encuentro</span>
+                <svg class="accomp-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </h3>
+            <div class="accomp-item-body" id="accompBody1" role="region" aria-labelledby="accompBtn1">
+              <div class="accomp-item-body-inner">
+                <p>Nuestro primer encuentro será por Google Meet y tendrá una duración aproximada de 90 minutos.</p>
+                <p>Este espacio está pensado para conocernos, comprender el momento que estás viviendo, explorar aquello que deseas trabajar y definir cómo será el proceso de acompañamiento.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accomp-item">
+            <h3>
+              <button class="accomp-item-btn" id="accompBtn2" aria-expanded="false" aria-controls="accompBody2">
+                <span class="accomp-item-title">Sesiones de seguimiento</span>
+                <svg class="accomp-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </h3>
+            <div class="accomp-item-body" id="accompBody2" role="region" aria-labelledby="accompBtn2">
+              <div class="accomp-item-body-inner">
+                <p>A partir del primer encuentro, nos reuniremos una vez por semana mediante Google Meet.</p>
+                <p>Cada sesión tendrá una duración aproximada de 60 minutos.</p>
+                <p>El ritmo del proceso dependerá de tus necesidades y de los objetivos que vayamos construyendo juntos durante el acompañamiento.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accomp-item">
+            <h3>
+              <button class="accomp-item-btn" id="accompBtn3" aria-expanded="false" aria-controls="accompBody3">
+                <span class="accomp-item-title">Mi forma de acompañar</span>
+                <svg class="accomp-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </h3>
+            <div class="accomp-item-body" id="accompBody3" role="region" aria-labelledby="accompBtn3">
+              <div class="accomp-item-body-inner">
+                <p>Cada persona vive un proceso diferente.</p>
+                <p>Este espacio no busca ofrecer respuestas prefabricadas ni seguir un método rígido.</p>
+                <p>Trabajaremos utilizando la Kábala práctica como un mapa para comprender patrones, emociones y procesos internos, integrando herramientas de PNL cuando aporten valor al trabajo realizado.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accomp-item">
+            <h3>
+              <button class="accomp-item-btn" id="accompBtn4" aria-expanded="false" aria-controls="accompBody4">
+                <span class="accomp-item-title">Cierre</span>
+                <svg class="accomp-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </h3>
+            <div class="accomp-item-body" id="accompBody4" role="region" aria-labelledby="accompBtn4">
+              <div class="accomp-item-body-inner">
+                <p>Cada proceso tiene su propio ritmo.</p>
+                <p>Mi intención es ofrecerte un espacio de escucha, reflexión y acompañamiento para que puedas comprender con mayor claridad aquello que estás viviendo y encontrar recursos que puedas integrar en tu vida cotidiana.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="section" id="historia">
+  <div class="wrap">
+    <div class="reveal story-head">
+      <span class="section-label">Mi historia</span>
+      <p class="story-intro">Un camino de búsqueda, transformación y conexión interior.</p>
+    </div>
+    <div class="story-reveal reveal">
+      <div class="story-toggle-wrap">
+        <button class="story-toggle" id="storyToggle" aria-expanded="false" aria-controls="storyBody">
+          <span class="story-toggle-label">Leer mi historia</span>
+          <svg class="story-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+      </div>
+      <div class="story-body" id="storyBody">
+        <div class="story-body-inner">
+          <p>Este camino comenzó para mí en un momento de quiebre, donde muchas estructuras internas empezaron a moverse.</p>
+          <p>Al estudiar el Árbol de la Vida, empecé a comprender que muchas heridas, bloqueos y patrones no aparecen para castigarnos, sino para mostrarnos algo que todavía necesita ser visto, integrado y transformado.</p>
+          <p>Mi propio proceso me llevó a mirar hacia adentro, reconocer mis movimientos internos y encontrar en la Kábala una guía profunda para comprender el alma, las emociones y los procesos de vida.</p>
+          <p>Hoy acompaño desde la integración, la sensibilidad y el estudio, ofreciendo un espacio 1:1 para mirar tu proceso con más claridad, calma y conexión interior.</p>
+          <p class="story-body-quote">Mi vida cambió cuando dejé de buscar respuestas afuera y empecé a mirar mi propio mapa interior.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE RESOURCE -->
+<section class="section resource-section" id="recurso">
+  <div class="wrap">
+    <div class="reveal psalm-head">
+      <span class="section-label">Conexión</span>
+    </div>
+    <div class="psalm-card reveal">
+      <h2 class="psalm-card-heading">Salmo 145</h2>
+      <p class="psalm-card-text">Un recurso sencillo para pausar, respirar y meditar en tres versículos del Salmo 145 desde la gratitud, la confianza y la apertura al sustento.</p>
+      <div class="psalm-card-actions">
+        <a href="./salmo-145.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Ver y descargar Salmo 145
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="18" height="18" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
         </a>
-        <p class="download-note">El PDF es opcional, por si deseas imprimirlo o guardarlo. No hace falta descargarlo para leer el Salmo: ya lo has leído aquí, completo.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SIGNIFICADO -->
-  <section class="section tight">
-    <div class="read reveal meaning-block">
-      <h2>Un poco más sobre este Salmo</h2>
-      <div class="prose">
-        <p>El Salmo 145 ocupa un lugar especial dentro de la tradición judía. Se recita a diario, y desde antiguo se le ha tenido un cariño particular: es una forma sencilla y cotidiana de agradecer y de recordar que la vida sostiene.</p>
-        <p>En su centro está uno de sus versículos más queridos:</p>
-        <p class="pullquote">«Abres Tu mano y sacias el deseo de todo ser viviente.»</p>
-        <p>Es una imagen de generosidad y de sustento: la certeza de que hay suficiente, y de que cada ser recibe lo que necesita. Por eso este Salmo se asocia con la confianza, con la gratitud por lo que ya se tiene, y con la apertura para recibir aquello que está por llegar.</p>
-        <p>No hace falta conocer la Kábala ni ninguna tradición en profundidad para que estas palabras acompañen. Se pueden leer, sencillamente, como un recordatorio sereno de que no estás sola.</p>
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="section-label">Antes de escribir</span>
+      <h2 class="section-title">Quizá te estás preguntando…</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">No quiero algo religioso o dogmático.<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Este es un espacio de autoconocimiento, no de doctrina. Usamos el Árbol de la Vida como una herramienta para comprender tus emociones y tus procesos. No hay creencias que adoptar ni reglas que seguir: solo una mirada más clara sobre tu propia vida.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">No sé si una sesión me ayudará de verdad.<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Cada sesión está pensada para que salgas con algo concreto: más claridad, una comprensión nueva o un próximo paso. Podemos empezar por un solo encuentro, sin compromiso de continuar, y desde ahí ver cómo te sientes.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">No sé nada de Kábala.<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">No necesitas saber nada previo. Yo te acompaño en todo el proceso y te explico lo que vaya surgiendo, con un lenguaje cercano. El Árbol de la Vida es solo el mapa; lo importante es lo que tú estás viviendo.</div></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
+<!-- FINAL CTA -->
+<section class="section final-section" id="contacto">
+  <div class="wrap">
+    <div class="final-inner">
+      <span class="section-label" style="display:inline-block;">Sesiones 1:1</span>
+      <h2>Cuando quieras, empezamos por una conversación</h2>
+      <p>Escríbeme por WhatsApp y cuéntame en qué momento estás. Desde ahí vemos juntas cuál es la mejor forma de acompañarte.</p>
+      <a href="https://wa.me/17868480827?text=Hola%20Begonia%2C%20quisiera%20conocer%20m%C3%A1s%20sobre%20las%20sesiones%201%3A1." target="_blank" rel="noopener noreferrer" class="btn btn-wa-big">
+        <svg class="wa-ico" viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.8.9.9-2.8-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.6 6.6 0 01-1.9-1.2 7.3 7.3 0 01-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4a.5.5 0 000-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a.9.9 0 00-.6.3 2.7 2.7 0 00-.8 2 4.7 4.7 0 001 2.5 10.7 10.7 0 004.1 3.6c1.5.6 1.8.5 2.1.5a2.4 2.4 0 001.6-1.1 2 2 0 00.1-1.1c0-.1-.2-.2-.4-.3z"/></svg>
+        Reservar mi sesión
+      </a>
+      <p class="final-microcopy">Te responderé personalmente.</p>
+    </div>
+  </div>
+</section>
 </main>
 
 <footer class="footer">
   <div class="wrap">
     <div class="footer-logo">Begonia Portocarrero</div>
     <p>Acompañamiento 1:1 para tu camino interior.</p>
-    <a href="./index.html" class="footer-link">Volver a la página principal</a>
   </div>
 </footer>
 
 <script>
-  const io = new IntersectionObserver(function(entries){
-    entries.forEach(function(en){
-      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
-</script>
+const sefirot = [
+  { id:'keter',   heb:'כתר',   translit:'Kéter',   es:'Corona',        q:'¿Desarrollo mi verdadero potencial?' },
+  { id:'jojma',   heb:'חכמה',  translit:'Jojmá',   es:'Sabiduría',     q:'¿Transformo las dificultades a mi favor?' },
+  { id:'bina',    heb:'בינה',  translit:'Biná',    es:'Entendimiento', q:'¿Sé ordenar mis pensamientos?' },
+  { id:'jesed',   heb:'חסד',   translit:'Jésed',   es:'Misericordia',  q:'¿Sé perdonarme cuando fallo?' },
+  { id:'guevura', heb:'גבורה', translit:'Guevurá', es:'Fuerza',        q:'¿Sé poner límites firmes y saludables?' },
+  { id:'tiferet', heb:'תפארת', translit:'Tiféret', es:'Belleza',       q:'¿Nutro y cuido mi autoestima?' },
+  { id:'netzaj',  heb:'נצח',   translit:'Netzaj',  es:'Victoria',      q:'¿Mis impulsos emocionales controlan mis acciones?' },
+  { id:'hod',     heb:'הוד',   translit:'Hod',     es:'Esplendor',     q:'¿Me comunico con total honestidad?' },
+  { id:'yesod',   heb:'יסוד',  translit:'Yesod',   es:'Fundamento',    q:'¿Trato de ser alguien más por aceptación?' },
+  { id:'maljut',  heb:'מלכות', translit:'Maljut',  es:'Reino',         q:'¿Logro materializar mis metas en el plano físico?' },
+];
+const layout = {
+  keter:[180,50], jojma:[260,130], bina:[100,130],
+  jesed:[260,210], guevura:[100,210], tiferet:[180,290],
+  netzaj:[260,370], hod:[100,370], yesod:[180,430], maljut:[180,510]
+};
+function line(a,b){ const [x1,y1]=layout[a],[x2,y2]=layout[b]; return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/>`; }
+document.getElementById('treePaths').innerHTML = [
+  ['keter','jojma'],['keter','bina'],['jojma','bina'],
+  ['jojma','jesed'],['bina','guevura'],['jojma','tiferet'],['bina','tiferet'],
+  ['jesed','guevura'],['jesed','tiferet'],['guevura','tiferet'],
+  ['jesed','netzaj'],['guevura','hod'],['tiferet','netzaj'],['tiferet','hod'],['tiferet','yesod'],
+  ['netzaj','hod'],['netzaj','yesod'],['hod','yesod'],
+  ['netzaj','maljut'],['hod','maljut'],['yesod','maljut'],['keter','tiferet']
+].map(p=>line(p[0],p[1])).join('');
 
+const group = document.getElementById('sefirotGroup');
+Object.keys(layout).forEach(id=>{
+  const s = sefirot.find(x=>x.id===id);
+  const [x,y]=layout[id];
+  const g = document.createElementNS('http://www.w3.org/2000/svg','g');
+  g.setAttribute('class','sefira-node'); g.setAttribute('tabindex','0'); g.setAttribute('role','button');
+  g.setAttribute('aria-label',`${s.translit}, ${s.es}`);
+  g.innerHTML = `<circle class="sefira-circle" cx="${x}" cy="${y}" r="26"/>
+    <text class="sefira-heb" x="${x}" y="${y-2}">${s.heb}</text>
+    <text class="sefira-label" x="${x}" y="${y+13}">${s.translit}</text>`;
+  const activate = ()=>selectSefira(s, g);
+  g.addEventListener('click', activate);
+  g.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); activate(); }});
+  group.appendChild(g);
+});
+const panelEmpty = document.getElementById('panelEmpty');
+const panelContent = document.getElementById('panelContent');
+function selectSefira(s, node){
+  document.querySelectorAll('.sefira-node').forEach(n=>n.classList.remove('active'));
+  node.classList.add('active');
+  document.getElementById('panelHeb').textContent = s.heb;
+  document.getElementById('panelTranslit').textContent = s.translit;
+  document.getElementById('panelName').textContent = s.es;
+  document.getElementById('panelQ').textContent = s.q;
+  panelEmpty.style.display='none';
+  panelContent.classList.add('show');
+}
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const item = btn.parentElement, ans = item.querySelector('.faq-a');
+    const open = item.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    ans.style.maxHeight = open ? ans.scrollHeight+'px' : 0;
+  });
+});
+const io = new IntersectionObserver(entries=>{ entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }}); },{ threshold:0.12 });
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* Mobile menu */
+const navBurger = document.getElementById('navBurger');
+const mobileMenu = document.getElementById('mobileMenu');
+navBurger.addEventListener('click', ()=>{
+  const open = mobileMenu.classList.toggle('open');
+  navBurger.classList.toggle('open', open);
+  navBurger.setAttribute('aria-expanded', open);
+  navBurger.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+});
+mobileMenu.querySelectorAll('a').forEach(a=>{
+  a.addEventListener('click', ()=>{
+    mobileMenu.classList.remove('open');
+    navBurger.classList.remove('open');
+    navBurger.setAttribute('aria-expanded', false);
+    navBurger.setAttribute('aria-label', 'Abrir menú');
+  });
+});
+
+/* Mi historia accordion */
+const story = document.querySelector('.story-reveal');
+const storyToggle = document.getElementById('storyToggle');
+const storyBody = document.getElementById('storyBody');
+storyToggle.addEventListener('click', ()=>{
+  const open = story.classList.toggle('open');
+  storyToggle.setAttribute('aria-expanded', open);
+  storyBody.style.maxHeight = open ? storyBody.scrollHeight + 'px' : 0;
+});
+
+/* Acompañamiento — desplegable maestro + acordeón */
+const accomp = document.querySelector('.accomp-reveal');
+const accompToggle = document.getElementById('accompToggle');
+const accompPanel = document.getElementById('accompPanel');
+
+function setPanelHeight(){
+  if(accomp.classList.contains('open')){
+    accompPanel.style.maxHeight = accompPanel.scrollHeight + 'px';
+  }
+}
+
+accompToggle.addEventListener('click', ()=>{
+  const open = accomp.classList.toggle('open');
+  accompToggle.setAttribute('aria-expanded', open);
+  accompPanel.style.maxHeight = open ? accompPanel.scrollHeight + 'px' : 0;
+});
+
+const accompItems = Array.from(document.querySelectorAll('.accomp-item'));
+accompItems.forEach((item)=>{
+  const btn = item.querySelector('.accomp-item-btn');
+  const body = item.querySelector('.accomp-item-body');
+  btn.addEventListener('click', ()=>{
+    const isOpen = item.classList.toggle('open');
+    btn.setAttribute('aria-expanded', isOpen);
+    body.style.maxHeight = isOpen ? body.scrollHeight + 'px' : 0;
+    // Recalcular el panel padre tras la transición del ítem
+    const onEnd = ()=>{ setPanelHeight(); body.removeEventListener('transitionend', onEnd); };
+    body.addEventListener('transitionend', onEnd);
+    // Fallback inmediato para reduce-motion / navegadores sin transitionend
+    setPanelHeight();
+  });
+});
+
+// Navegación con teclado entre cabeceras del acordeón
+const accompBtns = accompItems.map(i => i.querySelector('.accomp-item-btn'));
+accompBtns.forEach((btn, i)=>{
+  btn.addEventListener('keydown', (e)=>{
+    let target = null;
+    if(e.key === 'ArrowDown') target = accompBtns[(i + 1) % accompBtns.length];
+    else if(e.key === 'ArrowUp') target = accompBtns[(i - 1 + accompBtns.length) % accompBtns.length];
+    else if(e.key === 'Home') target = accompBtns[0];
+    else if(e.key === 'End') target = accompBtns[accompBtns.length - 1];
+    if(target){ e.preventDefault(); target.focus(); }
+  });
+});
+
+// Mantener alturas correctas al redimensionar
+window.addEventListener('resize', ()=>{
+  accompItems.forEach((item)=>{
+    if(item.classList.contains('open')){
+      const body = item.querySelector('.accomp-item-body');
+      body.style.maxHeight = body.scrollHeight + 'px';
+    }
+  });
+  setPanelHeight();
+});
+
+
+
+</script>
+<a href="https://wa.me/17868480827?text=Hola%20Begonia%2C%20quisiera%20conocer%20m%C3%A1s%20sobre%20las%20sesiones%201%3A1." class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.39c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.25 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42l-.48-.01c-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+</a>
 </body>
 </html>
