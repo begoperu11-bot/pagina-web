@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salmo 145 · Begonia Portocarrero</title>
+<meta name="description" content="Hoja del Salmo 145 lista para leer, descargar o imprimir.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#FDFBF7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #fdfbf7;
+    --green-deep: #1c352d;
+    --sage: #6e8b7e;
+    --bg-soft: #f6f2ea;
+    --border: rgba(110, 139, 126, 0.45);
+    --sage-text: #5a7267;
+    --sans: 'Inter', system-ui, sans-serif;
+    --ease: cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-soft);
+    font-family: var(--sans);
+  }
+  .sheet-wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 22px;
+    padding: 32px 16px 48px;
+  }
+  .sheet-frame {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 720px;
+    width: 100%;
+    box-shadow: 0 12px 40px rgba(28, 53, 45, 0.10);
+  }
+  .sheet-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .sheet-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  .sheet-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--green-deep);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s var(--ease), border-color 0.3s var(--ease);
+  }
+  .sheet-btn:hover {
+    background: var(--bg-soft);
+    border-color: var(--sage);
+  }
+  .sheet-btn:focus-visible {
+    outline: 2px solid var(--green-deep);
+    outline-offset: 2px;
+  }
+
+  @media print {
+    html, body { background: #fff; }
+    .sheet-actions { display: none !important; }
+    .sheet-wrap { padding: 0; min-height: 0; }
+    .sheet-frame {
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      padding: 0;
+      max-width: none;
+      width: 100%;
+    }
+    .sheet-image {
+      width: 100%;
+      height: auto;
+    }
+    @page {
+      size: A4;
+      margin: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet-wrap">
+  <div class="sheet-frame">
+    <img src="./assets/salmo-145.png" alt="Salmo 145" class="sheet-image">
+  </div>
+  <div class="sheet-actions">
+    <a href="./assets/salmo-145.pdf" download class="sheet-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="16" height="16" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 19h16"/></svg>
+      Descargar PDF
+    </a>
+    <button type="button" class="sheet-btn" onclick="window.print()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="16" height="16" aria-hidden="true"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6v-8Z"/></svg>
+      Imprimir
+    </button>
+  </div>
+</div>
+
+</body>
+</html>
